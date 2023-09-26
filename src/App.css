@@ -17,11 +17,11 @@
 
 /* ======= App colors ======= */
 :root {
-  --primaryColor: #5456cf;
-  --secondaryColor: #576057;
-  --tertiaryColor: #6f796f;
+  --primaryColor: #1b0e17;
+  --secondaryColor: #cd5ff8;
+  --tertiaryColor: #dbf4a7;
 
-  --fontColor: #1b1919;
+  --fontColor: #f6e4f6;
 }
 
 /* ======= Default css ======= */
@@ -34,6 +34,18 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
 }
 
 body {
@@ -54,4 +66,21 @@ a {
 button {
   font-family: "Centra", sans-serif;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.bg {
+  position: fixed;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+      to bottom left,
+      rgba(17, 16, 16, 0.678),
+      rgba(12, 10, 22, 0.863)
+    ),
+    url(./assets/image/bg.jpg);
+
+  background-size: cover;
+  background-position: center center;
 }
