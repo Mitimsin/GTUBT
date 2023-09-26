@@ -17,11 +17,12 @@
 
 /* ======= App colors ======= */
 :root {
-  --primaryColor: #1b0e17;
+  --primaryColor: #1e0f35;
   --secondaryColor: #cd5ff8;
   --tertiaryColor: #dbf4a7;
 
   --fontColor: #f6e4f6;
+  --fadedBlack: #00000033;
 }
 
 /* ======= Default css ======= */
@@ -34,18 +35,6 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
-
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
 }
 
 body {

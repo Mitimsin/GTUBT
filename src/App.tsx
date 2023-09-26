@@ -3,6 +3,7 @@ import "./App.css";
 import ParticleStar from "./components/Base/ParticleStar";
 import Home from "./components/Home/Home";
 import ParticleShootingStar from "./components/Base/ParticleShootingStar";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <ParticleStar />
         <ParticleShootingStar />
       </div>
+      <Navbar />
       <Home />
       <Home />
     </>

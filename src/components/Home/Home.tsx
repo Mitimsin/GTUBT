@@ -5,7 +5,7 @@ import Type from "./Type";
 
 function Home() {
   return (
-    <section className="home-section" id="home">
+    <section className="home-container" id="home">
       <div className="home-zone">
         <div className="home-zone-left">
           <h1 className="heading">
