@@ -75,3 +75,8 @@ button {
   background-size: cover;
   background-position: center center;
 }
+
+.transition-image {
+  position: absolute;
+  width: 100%;
+}

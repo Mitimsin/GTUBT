@@ -27,7 +27,10 @@ const Events = () => {
             {EventList.map((event, index) => {
               return (
                 <div key={index} className="events-event-box">
-                  <p className="events-event-title">{event.title}</p>
+                  <div className="events-event-title-box">
+                    <div className="events-event-title-dot" />
+                    <p className="events-event-title">{event.title}</p>
+                  </div>
                   <p className="events-event-info">{event.info}</p>
                 </div>
               );
