@@ -1,10 +1,147 @@
 .events-container {
   min-height: calc(100vh - 90px);
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events-area {
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  background-color: var(--primaryColorHalf);
+  backdrop-filter: blur(20px);
+  border: 3px solid var(--fadedBlack);
+  border-radius: 10px;
+}
+
+.events-zone {
+  display: flex;
+}
+
+/* ======= left ======= */
+
+.events-zone.left {
+  flex: 2;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.events-header {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+
+  /* margin-bottom: 60px; */
+}
+
+.events-events {
+  display: flex;
+  gap: 25px;
+  height: 100%;
+
+  /* flex-direction: column; */
+  /* gap: 20px; */
+}
+
+.events-event-box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 7px;
+
+  /* gap: 5px; */
+}
+
+.events-event-title {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.events-event-info {
+  font-size: 18px;
+}
+
+/* ======= right ======= */
+
+.events-zone.right {
+  flex: 1;
+}
+
+.events-image-area {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.events-image-box {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 10px;
+  scale: 0.8;
+  z-index: -1;
+
+  transition: all 1400ms ease-in-out;
+}
+
+.events-image-box.current {
+  z-index: 3;
+  scale: 1;
+}
+
+.events-image-box.prev {
+  animation: moveOut 1000ms ease-in-out;
+}
+
+.events-image-box.next {
+  z-index: 1;
+}
+
+.events-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1170px) {
   .events-container {
     min-height: calc(100vh - 80px);
+  }
+
+  .events-area {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    margin: 10% 0;
+  }
+
+  .events-zone.left {
+    padding: 25px;
+  }
+
+  .events-events {
+    flex-direction: column;
+  }
+
+  .events-zone.right {
+    display: none;
+  }
+}
+
+@keyframes moveOut {
+  from {
+    scale: 1;
+    z-index: 5;
+    transform: translateX(0);
+  }
+  to {
+    scale: 1;
+    z-index: 5;
+    transform: translateX(100%);
   }
 }

@@ -45,6 +45,7 @@ const Navbar = () => {
         {NavbarMembers.map((member, index) => {
           return (
             <NavbarButton
+              key={index}
               index={index}
               title={member.title}
               destination={member.destination}
