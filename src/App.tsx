@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import ParticleShootingStar from "./components/Base/ParticleShootingStar";
 import Navbar from "./components/Navbar/Navbar";
 import Aboutus from "./components/Aboutus/Aboutus";
+import Events from "./components/Events/Events";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Home />
       <Aboutus />
+      <Events />
     </>
   );
 }

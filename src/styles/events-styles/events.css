@@ -1,0 +1,10 @@
+.events-container {
+  min-height: calc(100vh - 90px);
+  display: flex;
+}
+
+@media only screen and (max-width: 1170px) {
+  .events-container {
+    min-height: calc(100vh - 80px);
+  }
+}

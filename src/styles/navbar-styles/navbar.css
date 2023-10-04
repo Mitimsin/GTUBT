@@ -19,12 +19,11 @@
   backdrop-filter: blur(10px);
 }
 
-.navabr-zone-left {
+.navbar-zone {
   display: flex;
 }
 
-.navabr-zone-right {
-  display: flex;
+.navbar-zone.right {
   gap: 32px;
 }
 
@@ -65,11 +64,11 @@
     border: none;
     z-index: 999;
     gap: 3px;
-    height: 40%;
+    padding: 7px;
     aspect-ratio: 1;
   }
 
-  .navabr-zone-right {
+  .navbar-zone.right {
     position: absolute;
     top: 0;
     left: 0;
@@ -86,11 +85,11 @@
     transition: all 400ms ease-in-out;
   }
 
-  .navabr-zone-right.hidden {
+  .navbar-zone.right.hidden {
     transform: translateY(-100%);
   }
 
-  .navabr-zone-right.shown {
+  .navbar-zone.right.shown {
     transform: translateY(0);
   }
 

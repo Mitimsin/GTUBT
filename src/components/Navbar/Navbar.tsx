@@ -36,9 +36,9 @@ const Navbar = () => {
 
   return (
     <section id="navbar" className="navbar-container">
-      <div className="navabr-zone-left">GTU BT</div>
+      <div className="navbar-zone left">GTU BT</div>
       <div
-        className={`navabr-zone-right ${
+        className={`navbar-zone right ${
           mobile && burgerMenu ? "shown" : "hidden"
         }`}
       >
