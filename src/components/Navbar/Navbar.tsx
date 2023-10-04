@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/navbar-styles/navbar.css";
+import NavbarButton from "./NavbarButton";
 
 const Navbar = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [mobile, setMobile] = useState(false);
   const [burgerMenu, setBurgerMenu] = useState(false);
+  const [hoverIndex, setHoverIndex] = useState(-1);
 
   useEffect(() => {
     setMobile(width < 1024);
@@ -17,9 +19,9 @@ const Navbar = () => {
     const handleScroll = () => {
       const navbarStyle = document.querySelector(".navbar-container");
 
-      if (window.scrollY > 120) {
+      if (window.scrollY > 100) {
         navbarStyle?.classList.add("scrolled");
-      } else if (window.scrollY <= 120) {
+      } else if (window.scrollY <= 100) {
         navbarStyle?.classList.remove("scrolled");
       }
     };
@@ -34,10 +36,61 @@ const Navbar = () => {
 
   return (
     <section id="navbar" className="navbar-container">
-      <div>GTU BT</div>
-      <div>Navigation + socials</div>
+      <div className="navabr-zone-left">GTU BT</div>
+      <div
+        className={`navabr-zone-right ${
+          mobile && burgerMenu ? "shown" : "hidden"
+        }`}
+      >
+        {NavbarMembers.map((member, index) => {
+          return (
+            <NavbarButton
+              index={index}
+              title={member.title}
+              destination={member.destination}
+              hoverIndex={hoverIndex}
+              setHoverIndex={setHoverIndex}
+              mobile={mobile}
+              setBurgerMenu={setBurgerMenu}
+            />
+          );
+        })}
+      </div>
+      {mobile && (
+        <button
+          onClick={() => setBurgerMenu(!burgerMenu)}
+          className="navbar-burger-button"
+        >
+          <div className={`navbar-sitck ${burgerMenu && "top"}`}></div>
+          <div className={`navbar-sitck ${burgerMenu && "middle"}`}></div>
+          <div className={`navbar-sitck ${burgerMenu && "bottom"}`}></div>
+        </button>
+      )}
     </section>
   );
 };
+
+const NavbarMembers = [
+  {
+    title: "Ana Sayfa",
+    destination: "home",
+  },
+  {
+    title: "Hakkımızda",
+    destination: "aboutus",
+  },
+  {
+    title: "Etkinlikler",
+    destination: "events",
+  },
+  {
+    title: "Eğitimler",
+    destination: "education",
+  },
+  {
+    title: "İletişim",
+    destination: "contactus",
+  },
+];
 
 export default Navbar;

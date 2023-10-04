@@ -1,23 +1,26 @@
 import React from "react";
 import "../../styles/home-styles/home.css";
-import homeLogo from "../../assets/image/home.svg";
+import homeLogo from "../../assets/image/white_logo.png";
 import Type from "./Type";
 
 function Home() {
   return (
-    <section className="home-container" id="home">
+    <section id="home" className="home-container">
       <div className="home-zone">
         <div className="home-zone-left">
           <h1 className="heading">
-            Hi There!{" "}
+            Hoşgeldin!{" "}
             <span className="wave" role="img">
               👋🏻
             </span>
           </h1>
 
           <h1 className="heading-name">
-            WE'RE
-            <strong className="heading-name-main"> GTU COMPUTER SOCIETY</strong>
+            BİZ GTU
+            <strong className="heading-name-main">
+              {" "}
+              BİLGİSAYAR TOPLULUĞUYUZ
+            </strong>
           </h1>
           <Type />
         </div>

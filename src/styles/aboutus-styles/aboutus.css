@@ -1,0 +1,12 @@
+.aboutus-container {
+  min-height: 100vh - 80px;
+  display: flex;
+}
+
+.aboutus-zone-left {
+  display: flex;
+}
+
+.aboutus-zone-right {
+  display: flex;
+}
