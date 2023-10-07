@@ -1,5 +1,26 @@
 .education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: calc(100vh - 90px);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.education-title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.education-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 70vh;
+  gap: 30px;
 }
 
 @media only screen and (max-width: 1170px) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/contact-styles/contact.css";
 
 import wave from "../../assets/image/wave.svg";
@@ -18,6 +18,22 @@ import { MdCardMembership } from "react-icons/md";
 import { GiRomanToga } from "react-icons/gi";
 
 const Contact = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    setMobile(width < 1024);
+
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [width]);
+
   return (
     <section id="contact" className="contact-container">
       <div className="transition-image-box  rotate">
@@ -34,6 +50,7 @@ const Contact = () => {
                   url={network.url}
                   name={network.name}
                   icon={network.icon}
+                  isMobile={mobile}
                 />
               );
             })}

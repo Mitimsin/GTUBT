@@ -76,10 +76,13 @@
 
   .contact-area {
     flex-direction: column;
+    display: flex;
+    flex: 1;
+    width: 100%;
   }
 
   .contact-zone-left {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
   }
 
   .contact-qr-box {

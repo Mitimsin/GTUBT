@@ -6,7 +6,7 @@ const Footer = () => {
     <div id="footer" className="footer-container">
       <div>GTU BT</div>
       <div className="footer-zone">
-        <p>gtugtugtubt@info.com</p>
+        <p>gtekbt@gmail.com</p>
         <p>0505 594 29 48</p>
       </div>
     </div>

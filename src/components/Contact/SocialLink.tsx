@@ -6,6 +6,7 @@ interface Props {
   url: string;
   name: string;
   icon: IconType;
+  isMobile: boolean;
 }
 
 const SocialLink = (props: Props) => {
@@ -20,7 +21,7 @@ const SocialLink = (props: Props) => {
         onClick={() => window.open(props.url, "_blank")}
       >
         <props.icon
-          size={50}
+          size={props.isMobile ? 40 : 50}
           color="#f6e4f6"
           className={`${hovered ? "shake" : ""}`}
         />

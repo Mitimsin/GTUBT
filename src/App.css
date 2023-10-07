@@ -22,7 +22,7 @@
   --tertiaryColor: #aca7f4;
 
   --fontColor: #f6e4f6;
-  --darkFadedBlack: #000000cd;
+  --darkFadedBlack: #000000bb;
   --fadedBlack: #00000033;
   --primaryColorHalf: #1e0f3533;
 }
@@ -82,7 +82,7 @@ button {
   justify-content: center;
   position: absolute;
   width: 100%;
-  z-index: -1;
+  z-index: -5;
   overflow: hidden;
 }
 
