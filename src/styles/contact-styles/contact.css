@@ -14,6 +14,12 @@
   padding-top: 30px;
 }
 
+.contact-header {
+  font-weight: 700;
+  font-size: 50px;
+  margin: 0 2%;
+}
+
 .contact-area {
   display: flex;
   flex: 1;
@@ -40,11 +46,6 @@
   gap: 30px;
 }
 
-.contact-qr-header {
-  font-weight: 700;
-  font-size: 50px;
-}
-
 .contact-qr-box {
   width: 90%;
   background-color: transparent;
@@ -66,5 +67,24 @@
 @media only screen and (max-width: 1170px) {
   .contact-container {
     min-height: calc(100vh - 80px);
+  }
+
+  .contact-header {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact-area {
+    flex-direction: column;
+  }
+
+  .contact-zone-left {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-qr-box {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 }

@@ -24,7 +24,7 @@ const Contact = () => {
         <img src={wave} alt="" className="transition-image" />
       </div>
       <div className="contact-box">
-        <p className="contact-qr-header">Aramıza Katılmaya Hazır Mısın?</p>
+        <p className="contact-header">Aramıza Katılmaya Hazır Mısın?</p>
         <div className="contact-area">
           <div className="contact-zone-left">
             {soicalNetworks.map((network, index) => {
@@ -89,12 +89,12 @@ const soicalNetworks = [
   },
   {
     url: "https://docs.google.com/forms/d/e/1FAIpQLSeub75atkfQ6rKbfS49KvNK_xDnChHhtuzdTcZcLox7yebj-g/viewform",
-    name: "Üye Kayıt Formu",
+    name: "Üye Kayıdı",
     icon: MdCardMembership,
   },
   {
     url: "https://docs.google.com/forms/d/e/1FAIpQLSeeLmbkloYnv2ybkWY7kVJ_wJKRV4miPteMWt9NGiUDpEPr_Q/viewform",
-    name: "Ekip Başvuru Formu",
+    name: "Ekip Başvurusu",
     icon: GiRomanToga,
   },
 ];
