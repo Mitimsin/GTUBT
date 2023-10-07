@@ -8,10 +8,12 @@ import Events from "./components/Events/Events";
 import Education from "./components/Education/Education";
 
 import wave from "./assets/image/wave.svg";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div style={{ position: "relative" }}>
+    <>
       <Background />
       <Navbar />
       <Home />
@@ -19,7 +21,9 @@ function App() {
       <img src={wave} alt="" className="transition-image" />
       <Events />
       <Education />
-    </div>
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

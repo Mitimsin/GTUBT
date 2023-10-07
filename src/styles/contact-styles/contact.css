@@ -1,0 +1,9 @@
+.contact-container {
+  min-height: calc(100vh - 90px - 100px);
+}
+
+@media only screen and (max-width: 1170px) {
+  .contact-container {
+    min-height: calc(100vh - 80px - 100px);
+  }
+}

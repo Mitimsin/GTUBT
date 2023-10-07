@@ -1,0 +1,7 @@
+.footer-container {
+  height: 100px;
+  background-color: var(--darkFadedBlack);
+}
+
+@media only screen and (max-width: 1170px) {
+}

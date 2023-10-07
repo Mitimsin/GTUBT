@@ -90,7 +90,7 @@ const NavbarMembers = [
   },
   {
     title: "İletişim",
-    destination: "contactus",
+    destination: "contact",
   },
 ];
 
