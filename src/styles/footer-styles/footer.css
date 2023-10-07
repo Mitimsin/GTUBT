@@ -9,6 +9,24 @@
 
 .footer-zone {
   display: flex;
+  justify-content: center;
+}
+
+.footer-zone.left {
+  height: 100%;
+  aspect-ratio: 1;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.footer-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-zone.right {
   flex-direction: column;
   align-items: flex-end;
   gap: 5px;

@@ -21,6 +21,24 @@
 
 .navbar-zone {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-zone.left {
+  align-items: center;
+  justify-content: center;
+  width: 6%;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .navbar-zone.right {

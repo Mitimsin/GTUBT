@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "../../styles/navbar-styles/navbar.css";
 import NavbarButton from "./NavbarButton";
 
+import logo from "../../assets/image/white_logo.png";
+
 const Navbar = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [mobile, setMobile] = useState(false);
@@ -36,7 +38,12 @@ const Navbar = () => {
 
   return (
     <section id="navbar" className="navbar-container">
-      <div className="navbar-zone left">GTU BT</div>
+      <button
+        className="navbar-zone left"
+        onClick={() => window.location.reload()}
+      >
+        <img src={logo} alt="" className="navbar-logo" />
+      </button>
       <div
         className={`navbar-zone right ${
           mobile && burgerMenu ? "shown" : "hidden"

@@ -1,11 +1,18 @@
 import React from "react";
 import "../../styles/footer-styles/footer.css";
 
+import logo from "../../assets/image/white_logo.png";
+
 const Footer = () => {
   return (
     <div id="footer" className="footer-container">
-      <div>GTU BT</div>
-      <div className="footer-zone">
+      <button
+        className="footer-zone left"
+        onClick={() => window.location.reload()}
+      >
+        <img src={logo} alt="" className="footer-logo" />
+      </button>
+      <div className="footer-zone right">
         <p>gtekbt@gmail.com</p>
         <p>0505 594 29 48</p>
       </div>
