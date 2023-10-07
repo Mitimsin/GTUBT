@@ -106,7 +106,7 @@ const soicalNetworks = [
   },
   {
     url: "https://docs.google.com/forms/d/e/1FAIpQLSeub75atkfQ6rKbfS49KvNK_xDnChHhtuzdTcZcLox7yebj-g/viewform",
-    name: "Üye Kayıdı",
+    name: "Üye Kaydı",
     icon: MdCardMembership,
   },
   {

@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+
 import Background from "./components/Base/Background";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";

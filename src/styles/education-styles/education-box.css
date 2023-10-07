@@ -95,4 +95,11 @@
 }
 
 @media only screen and (max-width: 1170px) {
+  .education-box-info {
+    font-size: 18px;
+  }
+
+  .education-box-title.hover {
+    padding: 7% 5%;
+  }
 }

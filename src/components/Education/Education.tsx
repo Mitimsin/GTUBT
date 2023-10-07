@@ -1,6 +1,20 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/education-styles/education.css";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
+/* import { EffectCards } from "swiper/modules"; */
+import { EffectCoverflow, Pagination } from "swiper/modules";
+
+/* import "swiper/css/effect-cards"; */
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+/* effect={'cards'}
+grabCursor={true}
+modules={[EffectCards]} */
+
 import image1 from "../../assets/image/education/1.jpg";
 import image2 from "../../assets/image/education/2.jpg";
 import image3 from "../../assets/image/education/3.jpg";
@@ -31,22 +45,57 @@ const Education = () => {
   return (
     <section id="education" className="education-container">
       <p className="education-title">Neler Öğrettik?</p>
-      <div className="education-area">
-        {EducationList.map((education, index) => {
-          return (
-            <EducationBox
-              key={index}
-              index={index}
-              title={education.title}
-              title2={education.title2}
-              info={education.info}
-              img={education.img}
-              icon={education.icon}
-              isMobile={mobile}
-            />
-          );
-        })}
-      </div>
+      {mobile ? (
+        <Swiper
+          className="education-area"
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+        >
+          {EducationList.map((education, index) => {
+            return (
+              <SwiperSlide key={index} className="education-swiper-slide">
+                <EducationBox
+                  index={index}
+                  title={education.title}
+                  title2={education.title2}
+                  info={education.info}
+                  img={education.img}
+                  icon={education.icon}
+                  isMobile={mobile}
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      ) : (
+        <div className="education-area">
+          {EducationList.map((education, index) => {
+            return (
+              <EducationBox
+                key={index}
+                index={index}
+                title={education.title}
+                title2={education.title2}
+                info={education.info}
+                img={education.img}
+                icon={education.icon}
+                isMobile={mobile}
+              />
+            );
+          })}
+        </div>
+      )}
     </section>
   );
 };

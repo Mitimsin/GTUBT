@@ -27,4 +27,13 @@
   .education-container {
     min-height: calc(100vh - 80px);
   }
+
+  .education-area {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .education-swiper-slide {
+    width: 75% !important;
+  }
 }
