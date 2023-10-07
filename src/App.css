@@ -19,7 +19,7 @@
 :root {
   --primaryColor: #1e0f35;
   --secondaryColor: #cd5ff8;
-  --tertiaryColor: #dbf4a7;
+  --tertiaryColor: #aca7f4;
 
   --fontColor: #f6e4f6;
   --darkFadedBlack: #000000cd;
@@ -76,7 +76,26 @@ button {
   background-position: center center;
 }
 
-.transition-image {
+.transition-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.transition-image-box.rotate {
+  transform: rotate(180deg) translateY(95%);
+}
+
+.transition-image {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1170px) {
+  .transition-image {
+    width: 250%;
+  }
 }
