@@ -10,7 +10,6 @@ import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 
 import wave from "./assets/image/wave.svg";
-import foto from "./assets/image/bg.jpg";
 import logo from "./assets/image/white_logo.png";
 import LoadingScreen from "./components/Base/LoadingScreen";
 
@@ -36,14 +35,6 @@ function App() {
       ) : (
         <LoadingScreen />
       )}
-      <ImagePreloader
-        imageUrl={foto}
-        onImageLoad={() => {
-          setTimeout(() => {
-            setReady(true);
-          }, 2000);
-        }}
-      />
       <ImagePreloader
         imageUrl={logo}
         onImageLoad={() => {

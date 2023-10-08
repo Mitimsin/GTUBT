@@ -12,10 +12,7 @@ const Footer = () => {
       >
         <img src={logo} alt="" className="footer-logo" />
       </button>
-      <div className="footer-zone right">
-        <p>gtekbt@gmail.com</p>
-        <p>0505 594 29 48</p>
-      </div>
+
     </div>
   );
 };

@@ -74,20 +74,61 @@ const Events = () => {
 
 const EventList = [
   {
-    title: "GEEKDAY",
-    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec lorem eu purus dignissim feugiat eget in ex. Integer nec orci eget    dolor malesuada iaculis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec lorem eu purus dignissim feugiat eget in ex. Integer nec orci eget    dolor malesuada iaculis.",
+    title: "CYBER KNOWLEDGE",
+    info: `
+    Siber güvenlikle ilgili genel kültür kazanmayı hedeflediğimiz ve bu
+    bilgileri teknik ayrıntılarla güçlendirdiğimiz etkinliğimizde, dört ayrı
+    gün boyunca son derece verimli oturumlar gerçekleştirdik. Siber
+    güvenliğin tanımından etik boyutlarına kadar geniş bir yelpazede
+    bilgi edindik ve bu bilgileri alanında uzman eğitmenlerin uygulamalı
+    anlatımlarıyla pekiştirdik. Eventbrite üzerinden ücretsiz biletlerle
+    katılan 1,060 katılımcıya ulaştık ve sayfamızı 4,644 kişi ziyaret etti.
+    YouTube platformunda paylaştığımız etkinliğimiz toplamda 3,496
+    görüntülenme aldı.
+    `,
+
+  },
+  {
+    title: "HEART OF THE GAME",
+    info: `Oyun geliştirme ve tasarımıyla ilgili genel bilgi aktarımı, teknik
+    detayları öğrenme ve katılımcıların sorularını yanıtlama amacı
+    güttüğümüz etkinliğimizde, altı ayrı gün boyunca son derece verimli
+    oturumlar düzenledik. Oyun yapım süreci ve oyun dünyasının evrimi,
+    tasarım sürecindeki önemli ayrıntılar ve kullanılan teknikler gibi pek
+    çok konu başlığını alanında uzman kişilerden dinleme ve sorularımızı
+    sorma fırsatı bulduk. Her yayınımız, genel olarak YouTube üzerinden
+    
+    300'den fazla görüntülemeye ulaştı.`,
   },
   {
     title: "GEEKDAY",
-    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec lorem eu purus dignissim feugiat eget in ex. Integer nec orci eget    dolor malesuada iaculis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec lorem eu purus dignissiiscing elit. Proin nec lorem eu purus dignissim feugiat eget in ex. Integer necm feugiat eget in ex. Integer nec orci eget    dolor malesuada iaculis.",
+    info: `GeekDay, Gebze Teknik Üniversitesi Bilgisayar Topluluğu'nun vizyonu
+    doğrultusunda düzenlenen ve Türkiye genelinden katılımcılara kapılarını
+    açan, bir günlük bir etkinliktir. Bu etkinlik, paralel seminerlerden oluşur ve
+    bilgisayar dünyasına ilgi duyan, yani "geek" olarak adlandırılan bireyleri,
+    bilgisayar bilimlerinin çeşitli alanlarında uzman isimlerle bir araya
+    getirerek onlara birebir iletişim fırsatı sunmayı hedefler. Aynı zamanda
+    katılımcıların kişisel gelişimine katkı sağlamak amacıyla güncel ve teknik
+    
+    oturum içerikleri sunar.`,
   },
   {
-    title: "GEEKDAY",
-    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec lorem eu purus dignissim feugiat eget in ex. Integer nec orci eget    dolor malesuada iaculis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec lorem eu purus dignissim feugiat eget in ex. Integer nec orci eget    dolor malesuada iaculis.",
-  },
-  {
-    title: "GEEKDAY",
-    info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec lorem eu purus dignissim feugiat eget in ex. Integer nec orci eget    dolor malesuada iaculis.Lorem ipsum dolor sit amet, consectetur adip orci eget    dolor malesuada iaculis.",
+    title: "TAÇLANDIRMA HAFTASI",
+    info: `Verilen eğitimlerden sonra sektörde adını duyurmuş ve alanında
+    uzman kişilerin, ilgilendiğimiz yazılım dilinin sektördeki yerini bizlere
+    aktarmak amacıyla düzenlediğimiz bir etkinliğimizdir. Bu
+    etkinliğimize katılan konuşmacılar arasında C dili için Havelsan’da
+    Sistem Mühendisi olan Orhan AKSOY, Java için Softtech’te Full Stack
+    Developer olan Kerem DÜNDAR, Javascript için Fibabank’da Kıdemli
+    Yazılım Mühendisi olan Zafer AYAN, ve Python için Softtech’te
+    Yazılım ve Yapay Zeka Mühendisi olan Ethem Utku AKTAŞ yer
+    almıştır. Etkinliğimiz her oturum için genel olarak 450+
+    
+    görüntülenmeye sahip olup, katılımcılarımızdan olumlu geri dönüşler
+    aldık. Bu etkinliklerle bilgi ve deneyim paylaşımını teşvik etmeye ve
+    üyelerimize sektördeki gelişmeleri yakından takip etme fırsatı
+    
+    sunmaya devam ediyoruz.`,
   },
 ];
 
