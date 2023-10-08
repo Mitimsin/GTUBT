@@ -6,15 +6,15 @@
   height: 90px;
   width: 100%;
   padding: 30px 100px 0 120px;
-  z-index: 50;
+  z-index: 90;
 
   transition: all 300ms ease-in-out;
 }
 
 .navbar-container.scrolled {
-  background-color: #1b1a2ea9;
+  background-color: var(--primaryColorHalf);
   padding: 10px 100px 0 120px;
-  box-shadow: 0 0 20px var(--fadedBlack);
+  box-shadow: 0 0 20px var(--darkFadedBlack);
 
   backdrop-filter: blur(10px);
 }
@@ -80,10 +80,15 @@
     align-items: center;
     flex-direction: column;
     border: none;
-    z-index: 999;
+    z-index: 99;
     gap: 3px;
     padding: 7px;
     aspect-ratio: 1;
+  }
+
+  .navbar-zone.left {
+    width: 20%;
+    margin-bottom: 0;
   }
 
   .navbar-zone.right {

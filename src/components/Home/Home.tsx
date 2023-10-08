@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/home-styles/home.css";
-import homeLogo from "../../assets/image/white_logo.png";
+import homeLogo from "../../assets/image/color_logo.png";
 import Type from "./Type";
 
 function Home() {

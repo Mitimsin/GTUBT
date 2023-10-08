@@ -17,14 +17,17 @@
 
 /* ======= App colors ======= */
 :root {
-  --primaryColor: #1e0f35;
-  --secondaryColor: #cd5ff8;
-  --tertiaryColor: #aca7f4;
+  --primaryColor: #233b77;
+  --secondaryColor: #f39314;
+  --tertiaryColor: #c1203b;
 
-  --fontColor: #f6e4f6;
+  --fontColor: #ffffff;
   --darkFadedBlack: #000000bb;
   --fadedBlack: #00000033;
-  --primaryColorHalf: #1e0f3533;
+  --primaryColorHalf: #233b7799;
+
+  --backgroundStart: #0c1f4e;
+  --backgroundEnd: #11224df3;
 }
 
 /* ======= Default css ======= */

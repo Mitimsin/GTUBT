@@ -25,7 +25,11 @@
   transition: 300ms ease-in-out;
   transition-delay: 150ms;
 
-  background-image: linear-gradient(to bottom left, #a1b9ee, #6b81b1, #4c669e);
+  background-image: linear-gradient(
+    to bottom left,
+    var(--backgroundStart),
+    var(--backgroundEnd)
+  );
 }
 
 .link-zone:hover {
