@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import "../../styles/contact-styles/contact.css";
 import emailjs from "@emailjs/browser";
 
-import wave from "../../assets/image/wave.svg";
 import Footer from "../Footer/Footer";
 
 import qr from "../../assets/image/qr.png";
@@ -101,9 +100,6 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-container">
-      <div className="transition-image-box  rotate">
-        <img src={wave} alt="" className="transition-image" />
-      </div>
       <div className="contact-box">
         <p className="contact-header">İletişim Kanallarımız</p>
         <div className="contact-area">

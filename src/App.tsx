@@ -13,6 +13,7 @@ import wave from "./assets/image/wave.svg";
 import icon from "./assets/image/white_logo.png";
 import logo from "./assets/image/color_logo.png";
 import LoadingScreen from "./components/Base/LoadingScreen";
+import Recruit from "./components/Recruit/Recruit";
 
 function App() {
   const [ready, setReady] = useState(false);
@@ -31,6 +32,7 @@ function App() {
           </div>
           <Events />
           <Education />
+          <Recruit />
           <Contact />
         </>
       ) : (

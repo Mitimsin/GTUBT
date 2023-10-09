@@ -73,7 +73,7 @@ button {
 }
 
 .transition-image-box.rotate {
-  transform: rotate(180deg) translateY(95%);
+  transform: rotate(180deg) translateY(100%);
 }
 
 .transition-image {

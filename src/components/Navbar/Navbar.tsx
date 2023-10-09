@@ -96,6 +96,10 @@ const NavbarMembers = [
     destination: "education",
   },
   {
+    title: "Üyelik",
+    destination: "recruit",
+  },
+  {
     title: "İletişim",
     destination: "contact",
   },
