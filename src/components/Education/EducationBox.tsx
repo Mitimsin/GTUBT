@@ -25,6 +25,7 @@ const EducationBox = (props: Props) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => !props.isMobile && setHovered(false)}
     >
+      <div className={`education-box-sheet ${hovered ? "hover" : ""}`} />
       <div className={`education-box-image-box ${hovered ? "hover" : ""}`}>
         <img
           src={props.img}

@@ -3,17 +3,9 @@ import "../../styles/education-styles/education.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
-/* import { EffectCards } from "swiper/modules"; */
 import { EffectCoverflow, Pagination } from "swiper/modules";
-
-/* import "swiper/css/effect-cards"; */
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
-/* effect={'cards'}
-grabCursor={true}
-modules={[EffectCards]} */
 
 import image1 from "../../assets/image/education/1.jpg";
 import image2 from "../../assets/image/education/2.jpg";
@@ -22,6 +14,8 @@ import image4 from "../../assets/image/education/4.jpg";
 
 import { FaReact } from "react-icons/fa";
 import { BiLogoFlutter } from "react-icons/bi";
+import { BsShieldLockFill } from "react-icons/bs";
+import { LuGamepad2 } from "react-icons/lu";
 
 import EducationBox from "./EducationBox";
 
@@ -111,7 +105,7 @@ const EducationList = [
   {
     title: "Web Geliştirme",
     title2: "Atolyesi",
-    info: "düzenlediğimiz Web Geliştirme Atölyesi'nde, katılımcılarımıza dijital dünyanın kapılarını aralamak için bir fırsat sunduk. Bu atölyede, web geliştirmenin temel prensiplerini anladık ve katılımcılar olarak kendi projelerimizi oluşturma şansını yakaladık. Eğitmenlerimiz, web sitesi tasarlamanın yanı sıra kullanıcı deneyimi optimizasyonu, etkili içerik yönetimi ve modern web teknolojileri gibi konularda katılımcılara detaylı bilgiler sundular. Atölye süresince gerçekleştirdiğimiz interaktif çalışmalar ve canlı örneklerle, katılımcılarımızın web geliştirme dünyasına sağlam bir adım atmalarını sağladık.",
+    info: "Düzenlediğimiz Web Geliştirme Atölyesi'nde, katılımcılarımıza dijital dünyanın kapılarını aralamak için bir fırsat sunduk. Bu atölyede, web geliştirmenin temel prensiplerini anladık ve katılımcılar olarak kendi projelerimizi oluşturma şansını yakaladık. Eğitmenlerimiz, web sitesi tasarlamanın yanı sıra kullanıcı deneyimi optimizasyonu, etkili içerik yönetimi ve modern web teknolojileri gibi konularda katılımcılara detaylı bilgiler sundular. Atölye süresince gerçekleştirdiğimiz interaktif çalışmalar ve canlı örneklerle, katılımcılarımızın web geliştirme dünyasına sağlam bir adım atmalarını sağladık.",
     img: image2,
     icon: FaReact,
   },
@@ -120,14 +114,14 @@ const EducationList = [
     title2: "Atolyesi",
     info: "Bilgisayar Topluluğu olarak düzenlediğimiz Kriptoloji Atölyesi'nde, katılımcılarımıza şifrelerin ve güvenliğin dünyasını keşfetme fırsatı verdik. Bu atölye boyunca, şifreleme yöntemlerini anladık, güvenlik açıklarını tespit etme tekniklerini öğrendik ve kriptografinin temel konularında bilgi sahibi olduk. Gerçek yaşam senaryoları üzerinden örneklerle pratik uygulamalar gerçekleştirerek, katılımcılarımızın kriptoloji alanındaki becerilerini güçlendirmelerine yardımcı olduk.",
     img: image3,
-    icon: BiLogoFlutter,
+    icon: BsShieldLockFill,
   },
   {
     title: "Oyun Geliştirme",
     title2: "Atolyesi",
     info: "Oyun Geliştirme Atölyesi'nde, katılımcılarımıza oyun geliştirmenin heyecanını yaşama şansı sunduk. Bu atölyede, oyun mekaniği tasarlama, grafik ve ses tasarımı, temel programlama konularında uzmanlaşma fırsatı bulduk. Katılımcılarımız, gerçek oyun geliştirme senaryoları üzerinden örneklerle pratik bilgiler öğrenirken, kendi oyun projelerini oluşturma deneyimini yaşadılar. Canlı örnekler ve interaktif çalışmalarla dolu atölye, katılımcılarımızın yaratıcılıklarını serbest bırakmalarına olanak tanıdı.",
     img: image4,
-    icon: FaReact,
+    icon: LuGamepad2,
   },
 ];
 

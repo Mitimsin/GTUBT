@@ -1,16 +1,6 @@
 .social-link-container {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  padding: 10px;
-  aspect-ratio: 1;
-  gap: 15px;
-}
-
-.link-zone {
-  display: flex;
-  align-items: center;
   justify-content: center;
   flex: 1;
   border: 3px solid black;
@@ -40,21 +30,7 @@
   animation: shake-animation 1500ms ease-in-out;
 }
 
-.link-title {
-  font-size: 18px;
-  white-space: nowrap;
-}
-
 @media only screen and (max-width: 1170px) {
-  .social-link-container {
-    padding: 5px;
-    gap: 2px;
-  }
-
-  .link-title {
-    font-size: 12px;
-    white-space: nowrap;
-  }
 }
 
 @keyframes shake-animation {

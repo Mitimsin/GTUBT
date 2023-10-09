@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../styles/contact-styles/contact.css";
+import emailjs from "@emailjs/browser";
 
 import wave from "../../assets/image/wave.svg";
 import Footer from "../Footer/Footer";
@@ -14,12 +15,13 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { MdCardMembership } from "react-icons/md";
-import { GiRomanToga } from "react-icons/gi";
 
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+
   const [width, setWidth] = useState(window.innerWidth);
   const [mobile, setMobile] = useState(false);
+  const [sendButton, setSendButton] = useState(true);
 
   useEffect(() => {
     setMobile(width < 1024);
@@ -34,27 +36,121 @@ const Contact = () => {
     };
   }, [width]);
 
+  const handleSend = (e: React.FormEvent) => {
+    e.preventDefault();
+    const emailRegex = /\S+@\S+\.\S+/;
+
+    const nameInput = (e.currentTarget as HTMLFormElement)[
+      "user_name"
+    ] as HTMLInputElement;
+    const emailInput = (e.currentTarget as HTMLFormElement)[
+      "user_email"
+    ] as HTMLInputElement;
+    const phoneInput = (e.currentTarget as HTMLFormElement)[
+      "user_phone"
+    ] as HTMLInputElement;
+    const messageInput = (e.currentTarget as HTMLFormElement)[
+      "user_message"
+    ] as HTMLInputElement;
+
+    if (
+      !nameInput.value ||
+      !emailInput.value ||
+      !phoneInput.value ||
+      !messageInput.value
+    ) {
+      alert("Lütfen bütün alanları doldurun.");
+      return;
+    }
+
+    if (!emailRegex.test(emailInput.value)) {
+      alert("Lütfen geçerli bir mail adresi girin.");
+      return;
+    }
+
+    if (messageInput.value.length < 10) {
+      alert("En az 10 karakterli bir mesaj giriniz.");
+      return;
+    }
+
+    setSendButton(false);
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_l0j89vd",
+          "template_3j84dt5",
+          form.current,
+          "lXB9J6TM3NlFx7g-1"
+        )
+        .then(
+          (result) => {
+            form.current?.reset();
+            alert(
+              "Mesajınız tarafımıza başarıyla ulaştı. Aramıza katıldığın için çok mutluyuz!"
+            );
+            setSendButton(true);
+          },
+          (error) => {
+            alert("Mesajınızı alınırken bir hata oluştu!");
+            setSendButton(true);
+          }
+        );
+    }
+  };
+
   return (
     <section id="contact" className="contact-container">
       <div className="transition-image-box  rotate">
         <img src={wave} alt="" className="transition-image" />
       </div>
       <div className="contact-box">
-        <p className="contact-header">Aramıza Katılmaya Hazır Mısın?</p>
+        <p className="contact-header">İletişim Kanallarımız</p>
         <div className="contact-area">
-          <div className="contact-zone-left">
-            {soicalNetworks.map((network, index) => {
-              return (
-                <SocialLink
-                  key={index}
-                  url={network.url}
-                  name={network.name}
-                  icon={network.icon}
-                  isMobile={mobile}
-                />
-              );
-            })}
-          </div>
+          <form ref={form} onSubmit={handleSend} className="contact-zone-left">
+            <div className="contact-input-row">
+              <input
+                type="text"
+                name="user_name"
+                className="contact-input"
+                placeholder="Ad Soyad"
+              />
+            </div>
+            <div className="contact-input-row">
+              <input
+                type="text"
+                name="user_email"
+                className="contact-input"
+                placeholder="Mail"
+              />
+              <input
+                type="text"
+                name="user_phone"
+                className="contact-input"
+                placeholder="Telefon"
+              />
+            </div>
+            <div className="contact-input-row tall">
+              <textarea
+                name="user_message"
+                className="contact-input"
+                placeholder="Mesaj"
+                style={{ resize: "none" }}
+              />
+            </div>
+            <div className="contact-input-row">
+              <button
+                className={`contact-button ${sendButton ? "" : "blur"}`}
+                disabled={!sendButton}
+              >
+                Gönder <span className="effect-bubble one" />
+                <span className="effect-bubble two" />
+                <span className="effect-bubble three" />
+                <span className="effect-bubble four" />
+              </button>
+            </div>
+          </form>
+          <div className="seperator" />
           <div className="contact-zone-right">
             <button
               className="contact-qr-box"
@@ -65,6 +161,18 @@ const Contact = () => {
             >
               <img src={qr} alt="qr" className="contact-qr" />
             </button>
+            <div className="contact-social-links">
+              {soicalNetworks.map((network, index) => {
+                return (
+                  <SocialLink
+                    key={index}
+                    url={network.url}
+                    icon={network.icon}
+                    isMobile={mobile}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -76,43 +184,27 @@ const Contact = () => {
 const soicalNetworks = [
   {
     url: "https://www.instagram.com/gtubt",
-    name: "Instagram",
     icon: FaInstagram,
   },
   {
     url: "https://www.twitter.com/gtubt",
-    name: "Twitter",
     icon: FaXTwitter,
   },
   {
     url: "https://www.youtube.com/c/gtubt",
-    name: "Youtube",
     icon: FaYoutube,
   },
   {
     url: "https://t.me/joinchat/TdjSZkPhS5BjZTk0",
-    name: "Telegram",
     icon: FaTelegram,
   },
   {
     url: "https://discord.com/invite/EFpvDfz8Gx",
-    name: "Discord",
     icon: FaDiscord,
   },
   {
     url: "https://www.linkedin.com/company/gtubt/",
-    name: "LinkedIn",
     icon: FaLinkedinIn,
-  },
-  {
-    url: "https://docs.google.com/forms/d/e/1FAIpQLSeub75atkfQ6rKbfS49KvNK_xDnChHhtuzdTcZcLox7yebj-g/viewform",
-    name: "Üye Kaydı",
-    icon: MdCardMembership,
-  },
-  {
-    url: "https://docs.google.com/forms/d/e/1FAIpQLSeeLmbkloYnv2ybkWY7kVJ_wJKRV4miPteMWt9NGiUDpEPr_Q/viewform",
-    name: "Ekip Başvurusu",
-    icon: GiRomanToga,
   },
 ];
 

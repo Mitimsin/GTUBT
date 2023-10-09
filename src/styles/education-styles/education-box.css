@@ -3,12 +3,28 @@
   align-items: center;
   justify-content: center;
   flex: 1;
+  height: auto;
   border: 3px solid var(--fadedBlack);
-  height: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  padding: 25px;
+}
+
+.education-box-sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--darkFadedBlack);
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 400ms;
+}
+
+.education-box-sheet.hover {
+  transform: scaleX(1);
 }
 
 .education-box-image-box {
@@ -37,12 +53,11 @@
 
 .education-box-title {
   left: 0;
-  bottom: 0;
-  height: 100%;
+  top: 0;
   position: absolute;
 
-  background-color: var(--darkFadedBlack);
-  color: white;
+  background-color: white;
+  color: black;
 
   font-size: 30px;
   font-weight: 700;
@@ -50,13 +65,13 @@
 
   width: 0;
   transform-origin: left;
-  transition: all 400ms;
+  transition: all 400ms ease 100ms;
 
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
 }
 
 .education-box-title.hover {
-  padding: 10% 5%;
+  padding: 3% 4%;
   width: 100%;
 }
 
@@ -64,11 +79,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  left: 0;
   width: 86%;
-  margin: 0 7%;
-  font-size: 20px;
+  margin: 36% 7% 30% 7%;
+  font-size: 18px;
   z-index: 2;
 
   opacity: 0;
@@ -79,12 +92,12 @@
 
 .education-box-icon {
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
 
   opacity: 0;
   transform: translateY(2%);
   filter: blur(3px);
-  transition: all 500ms ease 200ms;
+  transition: all 500ms ease;
 }
 
 .education-box-info.hover,
@@ -95,11 +108,11 @@
 }
 
 @media only screen and (max-width: 1170px) {
-  .education-box-info {
-    font-size: 18px;
+  .education-box {
+    height: 100%;
   }
 
-  .education-box-title.hover {
-    padding: 7% 5%;
+  .education-box-info {
+    font-size: 16px;
   }
 }

@@ -17,7 +17,7 @@
 .contact-header {
   font-weight: 700;
   font-size: 50px;
-  margin: 0 2%;
+  margin: 0 5%;
 }
 
 .contact-area {
@@ -28,14 +28,100 @@
   gap: 3%;
 }
 
+/* ======= form ======= */
+
 .contact-zone-left {
-  display: grid;
-  align-items: center;
-  padding: 3% 0;
-  flex: 2;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 3;
 }
+
+.contact-input-row {
+  display: flex;
+  justify-content: center;
+  height: 16%;
+  min-height: 100px;
+}
+
+.contact-input-row.tall {
+  height: 40%;
+}
+
+.contact-input {
+  flex: 1;
+  margin: 1%;
+  border-radius: 10px;
+  border: none;
+  padding: 18px 26px;
+
+  background-color: var(--backgroundStart);
+  color: var(--fontColor);
+
+  letter-spacing: 0.8px;
+  font-family: "Centra", sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+
+  transition: all 300ms ease-in-out;
+}
+
+.contact-input:focus {
+  outline: none;
+  border: none;
+  background-color: white;
+  color: var(--primaryColorHalf);
+}
+
+.contact-input::placeholder {
+  font-size: 0.8em;
+  opacity: 0.8;
+  font-weight: 100;
+  color: var(--fontColor);
+
+  transition: all 300ms ease-in-out;
+}
+
+.contact-input:focus::placeholder {
+  color: var(--primaryColorHalf);
+  opacity: 0.9;
+}
+
+.contact-button {
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 5%;
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--secondaryColor);
+  border: 3px solid var(--secondaryColor);
+  font-size: 24px;
+  font-weight: 800;
+  overflow: hidden;
+  transition: 500ms;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.contact-button:hover {
+  color: var(--primaryColor);
+}
+
+.contact-button.blur {
+  opacity: 0.3;
+}
+
+/* ======= seperator ======= */
+
+.seperator {
+  display: none;
+}
+
+/* ======= qr and socials ======= */
 
 .contact-zone-right {
   display: flex;
@@ -43,11 +129,14 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  gap: 30px;
 }
 
 .contact-qr-box {
-  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  aspect-ratio: 1;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -64,6 +153,14 @@
   object-fit: contain;
 }
 
+.contact-social-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  gap: 15px;
+  margin: 10% 0;
+}
+
 @media only screen and (max-width: 1170px) {
   .contact-container {
     min-height: calc(100vh - 80px);
@@ -76,18 +173,80 @@
 
   .contact-area {
     flex-direction: column;
-    display: flex;
-    flex: 1;
     width: 100%;
   }
 
   .contact-zone-left {
-    gap: 0;
+    margin: 3% 5%;
+  }
+
+  .contact-input-row {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .contact-input-row.tall {
+    min-height: 150px;
+  }
+
+  .contact-zone-right {
+    margin: 3% 5%;
+    gap: 5%;
+    flex: 0;
+    flex-direction: row;
   }
 
   .contact-qr-box {
-    width: 70%;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    flex: 1;
   }
+
+  .contact-social-links {
+    flex: 1.5;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .seperator {
+    display: flex;
+    width: 65%;
+    height: 5px;
+    background-color: var(--backgroundStart);
+    align-self: center;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+  }
+}
+
+.effect-bubble {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--secondaryColor);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 500ms;
+  transition-delay: calc((var(--n) - 1) * 100ms);
+  z-index: -1;
+}
+
+.contact-button:hover .effect-bubble {
+  transform: translateY(0) scale(2);
+}
+
+.effect-bubble:nth-child(1) {
+  --n: 1;
+}
+
+.effect-bubble:nth-child(2) {
+  --n: 2;
+}
+
+.effect-bubble:nth-child(3) {
+  --n: 3;
+}
+
+.effect-bubble:nth-child(4) {
+  --n: 4;
 }
