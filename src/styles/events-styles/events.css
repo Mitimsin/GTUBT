@@ -75,13 +75,16 @@
 
 .events-zone.right {
   flex: 1;
+  overflow: hidden;
 }
 
 .events-image-area {
   display: flex;
   position: relative;
   width: 100%;
-  overflow: hidden;
+
+  margin-right: 30px;
+  overflow: visible;
 }
 
 .events-image-box {
@@ -156,6 +159,6 @@
   to {
     scale: 1;
     z-index: 5;
-    transform: translateX(100%);
+    transform: translateX(105%);
   }
 }

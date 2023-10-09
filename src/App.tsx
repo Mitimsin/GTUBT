@@ -15,13 +15,29 @@ import logo from "./assets/image/color_logo.png";
 import LoadingScreen from "./components/Base/LoadingScreen";
 import Recruit from "./components/Recruit/Recruit";
 
+export const DataContext = React.createContext<{
+  mobile: boolean;
+}>({ mobile: false });
+
 function App() {
   const [ready, setReady] = useState(false);
+  const [mobile, setMobile] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth < 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
       {ready ? (
-        <>
+        <DataContext.Provider value={{ mobile }}>
           <LoadingScreen faint={true} />
           <Background />
           <Navbar />
@@ -34,7 +50,7 @@ function App() {
           <Education />
           <Recruit />
           <Contact />
-        </>
+        </DataContext.Provider>
       ) : (
         <LoadingScreen />
       )}

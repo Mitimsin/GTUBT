@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import "../../styles/education-styles/education.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,23 +18,10 @@ import { BsShieldLockFill } from "react-icons/bs";
 import { LuGamepad2 } from "react-icons/lu";
 
 import EducationBox from "./EducationBox";
+import { DataContext } from "../../App";
 
 const Education = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const [mobile, setMobile] = useState(false);
-
-  useEffect(() => {
-    setMobile(width < 1024);
-
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [width]);
+  const { mobile } = useContext(DataContext);
 
   return (
     <section id="education" className="education-container">

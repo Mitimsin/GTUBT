@@ -27,8 +27,8 @@
 
 @media only screen and (max-width: 1170px) {
   .recruit-container {
-    min-height: calc(100vh - 80px);
-    padding-bottom: 50px;
+    min-height: auto;
+    padding-bottom: 70px;
   }
 
   .recruit-header {
@@ -41,8 +41,17 @@
     gap: 30px;
   }
 
-  .form-frame {
-    width: 85vw;
-    height: 50vh;
+  .recruit-button {
+    background-color: var(--secondaryColor);
+    border: none;
+    color: var(--fontColor);
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 5% 7%;
+    white-space: nowrap;
+  }
+
+  .recruit-button.red {
+    background-color: var(--tertiaryColor);
   }
 }

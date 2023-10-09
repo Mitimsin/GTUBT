@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import "../../styles/contact-styles/contact.css";
 import emailjs from "@emailjs/browser";
 
@@ -14,26 +14,13 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { DataContext } from "../../App";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
+  const { mobile } = useContext(DataContext);
 
-  const [width, setWidth] = useState(window.innerWidth);
-  const [mobile, setMobile] = useState(false);
   const [sendButton, setSendButton] = useState(true);
-
-  useEffect(() => {
-    setMobile(width < 1024);
-
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [width]);
 
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();

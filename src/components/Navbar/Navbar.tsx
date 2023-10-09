@@ -1,40 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../../styles/navbar-styles/navbar.css";
 import NavbarButton from "./NavbarButton";
 
 import logo from "../../assets/image/white_logo.png";
+import { DataContext } from "../../App";
 
 const Navbar = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const [mobile, setMobile] = useState(false);
+  const { mobile } = useContext(DataContext);
   const [burgerMenu, setBurgerMenu] = useState(false);
   const [hoverIndex, setHoverIndex] = useState(-1);
 
   useEffect(() => {
-    setMobile(width < 1024);
-    if (width >= 1024) setBurgerMenu(false);
-
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
     const handleScroll = () => {
       const navbarStyle = document.querySelector(".navbar-container");
 
-      if (window.scrollY > 100) {
+      const treshold = mobile ? 20 : 100;
+
+      if (window.scrollY > treshold) {
         navbarStyle?.classList.add("scrolled");
-      } else if (window.scrollY <= 100) {
+      } else if (window.scrollY <= treshold) {
         navbarStyle?.classList.remove("scrolled");
       }
     };
-
-    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [width]);
+  }, [mobile]);
 
   return (
     <section id="navbar" className="navbar-container">
