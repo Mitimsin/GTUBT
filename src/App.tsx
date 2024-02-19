@@ -29,10 +29,6 @@ function App() {
         };
     }, []);
 
-    useEffect(() => {
-        console.log(faint);
-    }, [faint]);
-
     return (
         <>
             {ready ? (
