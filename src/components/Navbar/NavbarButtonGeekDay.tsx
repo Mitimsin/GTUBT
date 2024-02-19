@@ -3,13 +3,12 @@ import React from "react";
 interface props {
     index: number;
     title: string;
-    destination: string;
     hoverIndex: number;
     setHoverIndex: (state: number) => void;
     mobile: boolean;
     setBurgerMenu: (state: boolean) => void;
-    currentTab: string;
-    setCurrentTab: (state: string) => void;
+    currentTab: number;
+    setCurrentTab: (state: number) => void;
 }
 
 const NavbarButtonGeekDay = (props: props) => {
@@ -17,7 +16,7 @@ const NavbarButtonGeekDay = (props: props) => {
         <button
             className={`navbar-button ${
                 props.hoverIndex === -1
-                    ? props.currentTab === props.destination
+                    ? props.currentTab === props.index
                         ? "hovered"
                         : "not-hovered"
                     : props.hoverIndex === props.index
@@ -25,7 +24,7 @@ const NavbarButtonGeekDay = (props: props) => {
                     : "not-hovered"
             } `}
             onClick={() => {
-                props.setCurrentTab(props.destination);
+                props.setCurrentTab(props.index);
                 if (props.mobile) props.setBurgerMenu(false);
             }}
             onMouseEnter={() => props.setHoverIndex(props.index)}

@@ -1,10 +1,11 @@
 import React, { useContext, useState } from "react";
 import NavbarButtonGeekDay from "./NavbarButtonGeekDay";
 import { DataContext } from "../../App";
+import { TabMembers } from "../GeekDay/GeekDay";
 
 interface Props {
-    currentTab: string;
-    setCurrentTab: (state: string) => void;
+    currentTab: number;
+    setCurrentTab: (state: number) => void;
 }
 
 const NavbarGeekDay = (props: Props) => {
@@ -15,7 +16,7 @@ const NavbarGeekDay = (props: Props) => {
     return (
         <section
             id="navbar"
-            className="navbar-container"
+            className="navbar-container scrolled"
             style={{ justifyContent: mobile ? "flex-end" : "center" }}
         >
             <div
@@ -23,13 +24,12 @@ const NavbarGeekDay = (props: Props) => {
                     mobile && burgerMenu ? "shown" : "hidden"
                 }`}
             >
-                {NavbarMembers.map((member, index) => {
+                {TabMembers.map((member, index) => {
                     return (
                         <NavbarButtonGeekDay
                             key={index}
                             index={index}
-                            title={member.title}
-                            destination={member.destination}
+                            title={member}
                             hoverIndex={hoverIndex}
                             setHoverIndex={setHoverIndex}
                             mobile={mobile}
@@ -61,18 +61,3 @@ const NavbarGeekDay = (props: Props) => {
 };
 
 export default NavbarGeekDay;
-
-const NavbarMembers = [
-    {
-        title: "Takvim",
-        destination: "schedule",
-    },
-    {
-        title: "Konuşmacılar",
-        destination: "speakers",
-    },
-    {
-        title: "Sponsorlar",
-        destination: "sponsors",
-    },
-];

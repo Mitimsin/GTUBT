@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "../../styles/geekday-styles/geekday.css";
 
 import { DataContext } from "../../App";
@@ -12,11 +12,24 @@ import Sponsors from "./Sponsors/Sponsors";
 const GeekDay = () => {
     const { setFaint } = useContext(DataContext);
     const location = useLocation();
-    const [currentTab, setCurrentTab] = useState("speakers");
+    const [currentTab, setCurrentTab] = useState(1);
+    const containerRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         setFaint(false);
     }, [location.pathname, setFaint]);
+
+    useEffect(() => {
+        if (containerRef.current) {
+            const activeTabHeight =
+                containerRef.current.children[
+                    currentTab
+                ].getBoundingClientRect().height;
+
+            console.log(activeTabHeight);
+            containerRef.current.style.height = `${activeTabHeight}px`;
+        }
+    }, [currentTab]);
 
     return (
         <div className="geekday-container">
@@ -25,17 +38,19 @@ const GeekDay = () => {
                 currentTab={currentTab}
                 setCurrentTab={setCurrentTab}
             />
-            {currentTab === "schedule" ? (
+            <div
+                className="geekday-tab-container"
+                style={{ transform: `translateX(${-currentTab * 100}vw)` }}
+                ref={containerRef}
+            >
                 <Schedule />
-            ) : currentTab === "speakers" ? (
                 <Speakers />
-            ) : currentTab === "sponsors" ? (
                 <Sponsors />
-            ) : (
-                <></>
-            )}
+            </div>
         </div>
     );
 };
 
 export default GeekDay;
+
+export const TabMembers = ["Takvim", "Konuşmacılar", "Sponsorlar"];
