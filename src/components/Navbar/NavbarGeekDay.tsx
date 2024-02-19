@@ -29,7 +29,7 @@ const NavbarGeekDay = (props: Props) => {
                         <NavbarButtonGeekDay
                             key={index}
                             index={index}
-                            title={member}
+                            title={member.title}
                             hoverIndex={hoverIndex}
                             setHoverIndex={setHoverIndex}
                             mobile={mobile}

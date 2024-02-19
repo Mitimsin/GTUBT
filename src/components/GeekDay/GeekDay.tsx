@@ -12,7 +12,9 @@ import Sponsors from "./Sponsors/Sponsors";
 const GeekDay = () => {
     const { setFaint } = useContext(DataContext);
     const location = useLocation();
-    const [currentTab, setCurrentTab] = useState(1);
+    const [currentTab, setCurrentTab] = useState(
+        Math.floor((TabMembers.length - 1) / 2)
+    );
     const containerRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -26,7 +28,6 @@ const GeekDay = () => {
                     currentTab
                 ].getBoundingClientRect().height;
 
-            console.log(activeTabHeight);
             containerRef.current.style.height = `${activeTabHeight}px`;
         }
     }, [currentTab]);
@@ -43,9 +44,9 @@ const GeekDay = () => {
                 style={{ transform: `translateX(${-currentTab * 100}vw)` }}
                 ref={containerRef}
             >
-                <Schedule />
-                <Speakers />
-                <Sponsors />
+                {TabMembers.map((members, index) => {
+                    return members.component;
+                })}
             </div>
         </div>
     );
@@ -53,4 +54,8 @@ const GeekDay = () => {
 
 export default GeekDay;
 
-export const TabMembers = ["Takvim", "Konuşmacılar", "Sponsorlar"];
+export const TabMembers = [
+    { title: "Takvim", component: <Schedule /> },
+    { title: "Konuşmacılar", component: <Speakers /> },
+    { title: "Sponsorlar", component: <Sponsors /> },
+];
