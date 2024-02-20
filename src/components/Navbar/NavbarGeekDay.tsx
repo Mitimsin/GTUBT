@@ -1,7 +1,9 @@
 import React, { useContext, useState } from "react";
+
 import NavbarButtonGeekDay from "./NavbarButtonGeekDay";
 import { DataContext } from "../../App";
 import { TabMembers } from "../GeekDay/GeekDay";
+import logo from "../../assets/image/white_logo.png";
 
 interface Props {
     currentTab: number;
@@ -17,8 +19,16 @@ const NavbarGeekDay = (props: Props) => {
         <section
             id="navbar"
             className="navbar-container scrolled"
-            style={{ justifyContent: mobile ? "flex-end" : "center" }}
+            style={{ justifyContent: mobile ? "space-between" : "center" }}
         >
+            {mobile && (
+                <button
+                    className="navbar-zone left"
+                    onClick={() => (window.location.href = "/")}
+                >
+                    <img src={logo} alt="" className="navbar-logo" />
+                </button>
+            )}
             <div
                 className={`navbar-zone right ${
                     mobile && burgerMenu ? "shown" : "hidden"

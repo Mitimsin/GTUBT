@@ -24,8 +24,15 @@ const NavbarButtonGeekDay = (props: props) => {
                     : "not-hovered"
             } `}
             onClick={() => {
-                props.setCurrentTab(props.index);
-                if (props.mobile) props.setBurgerMenu(false);
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+
+                setTimeout(() => {
+                    props.setCurrentTab(props.index);
+                    if (props.mobile) props.setBurgerMenu(false);
+                }, 100);
             }}
             onMouseEnter={() => props.setHoverIndex(props.index)}
             onMouseLeave={() => props.setHoverIndex(-1)}

@@ -24,7 +24,6 @@ function Home() {
                     </h1>
                     <Type />
                 </div>
-
                 <div className="home-image-box">
                     <img src={homeLogo} alt="home" className="home-image" />
                 </div>

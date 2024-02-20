@@ -33,7 +33,7 @@ const Navbar = () => {
         <section id="navbar" className="navbar-container">
             <button
                 className="navbar-zone left"
-                onClick={() => window.location.reload()}
+                onClick={() => (window.location.href = "/")}
             >
                 <img src={logo} alt="" className="navbar-logo" />
             </button>
