@@ -14,9 +14,7 @@ import Sponsors from "./Sponsors/Sponsors";
 const GeekDay = () => {
     const { setFaint, mobile } = useContext(DataContext);
     const location = useLocation();
-    const [currentTab, setCurrentTab] = useState(
-        Math.floor((TabMembers.length - 1) / 2)
-    );
+    const [currentTab, setCurrentTab] = useState(0);
     const [scrollTopVisible, setScrollTopVisible] = useState(false);
     const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -40,9 +38,9 @@ const GeekDay = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const treshold = mobile ? 120 : 80;
+            const treshold = mobile ? 140 : 80;
 
-            if (window.scrollY > treshold) {
+            if (window.scrollY > treshold && currentTab !== 0) {
                 setScrollTopVisible(true);
             } else if (window.scrollY <= treshold) {
                 setScrollTopVisible(false);
@@ -53,7 +51,7 @@ const GeekDay = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, [mobile]);
+    }, [currentTab, mobile]);
 
     return (
         <div className="geekday-container">
