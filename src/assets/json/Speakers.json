@@ -1,6 +1,109 @@
 [
     {
-        "name": "Doğan Dalvar",
+        "name": "Doğan Dalva",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Turkcell",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Solana",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+
+    {
+        "name": "Talha Kılıç",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "İlknur Dönmez",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Erkan Şirin",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Burcu Sakız",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Batuhan Apaydın",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Emre Savcı",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Semih Kaya",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Emre Rençberoğlu",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Fatih Kadir Akın",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Emrah Kozan",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Sercan Yusuf",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Zafer Ayan",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Oktay Kiraz",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Sibel Aydemir",
+        "subject": "Being Awsome",
+        "company": "Awsome Factory",
+        "image": "foto_2.jpg"
+    },
+    {
+        "name": "Emin Fedar",
         "subject": "Being Awsome",
         "company": "Awsome Factory",
         "image": "foto_2.jpg"

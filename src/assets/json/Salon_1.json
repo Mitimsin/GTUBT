@@ -1,38 +1,38 @@
 [
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Doğan Dalva",
+        "time": "11:00 - 11:50",
         "image": "foto_2.jpg"
     },
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Turkcell",
+        "time": "12:00 - 12:50",
         "image": "foto_2.jpg"
     },
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Solana",
+        "time": "13:00 - 13:50",
         "image": "foto_2.jpg"
     },
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Talha Kılıç",
+        "time": "14:30 - 15:20",
         "image": "foto_2.jpg"
     },
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "İlknur Dönmez",
+        "time": "15:30 - 16:20",
         "image": "foto_2.jpg"
     },
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Erkan Şirin",
+        "time": "16:30 - 17:20",
         "image": "foto_2.jpg"
     }
 ]

@@ -41,7 +41,7 @@ const Aboutus = () => {
                         paddingBottom: 16,
                     }}
                 >
-                    GeekDay!
+                    GeekDay 2024!
                 </Link>
             </div>
         </section>

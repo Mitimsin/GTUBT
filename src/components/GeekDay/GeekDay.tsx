@@ -38,7 +38,7 @@ const GeekDay = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const treshold = mobile ? 140 : 80;
+            const treshold = mobile ? 140 : 120;
 
             if (window.scrollY > treshold && currentTab !== 0) {
                 setScrollTopVisible(true);

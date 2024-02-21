@@ -1,7 +1,7 @@
 .schedule-container {
     display: flex;
     flex-direction: column;
-    padding: 150px 1vw 40px 1vw;
+    padding: 124px 1vw 40px 1vw;
     min-width: 100vw;
 }
 
@@ -20,6 +20,13 @@
 .schedule-info {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.schedule-extra-info {
+    font-size: 16px;
+    margin-top: 6px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .schedule-zone {
@@ -132,6 +139,11 @@
 
     .schedule-info {
         font-size: 18px;
+    }
+
+    .schedule-extra-info {
+        font-size: 14px;
+        margin-top: 8px;
     }
 
     .schedule-zone {

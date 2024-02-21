@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../../styles/geekday-styles/schedule-styles/schedule.css";
 
 import ScheduleBox from "./ScheduleBox";
@@ -17,12 +17,13 @@ interface Props {
 
 const ScheduleStrip = (props: Props) => {
     const containerRef = useRef<HTMLDivElement | null>(null);
+    const [isOrigin, setIsOrigin] = useState(false);
 
     useEffect(() => {
-        if (containerRef.current) {
+        if (containerRef.current && !isOrigin) {
             containerRef.current.scrollLeft = props.slideValue;
         }
-    }, [props.slideValue]);
+    }, [isOrigin, props.slideValue]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -49,7 +50,12 @@ const ScheduleStrip = (props: Props) => {
     return (
         <div className="schedule-strip">
             <p className="schedule-strip-title">{props.title}</p>
-            <div ref={containerRef} className="schedule-strip-list">
+            <div
+                ref={containerRef}
+                className="schedule-strip-list"
+                onTouchStart={() => setIsOrigin(true)}
+                onTouchEnd={() => setIsOrigin(false)}
+            >
                 {props.salonDetail.map((member, index) => {
                     return (
                         <ScheduleBox

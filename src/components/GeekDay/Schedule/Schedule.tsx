@@ -14,8 +14,12 @@ const Schedule = () => {
             <div className="schedule-header-box">
                 <p className="schedule-header">Etkinlik Takvimi</p>
                 <p className="schedule-info">
-                    Bu sene 2 Mart'da gerçekleşecek olan GeekDay etkinlik
-                    takvimi
+                    Bu sene 2 Mart'ta gerçekleşecek olan GeekDay etkinlik
+                    takvimi. <br />
+                    <p className="schedule-extra-info">
+                        Etkinlik saat 10.00 da açılış konuşması ile başlayıp
+                        saat 17.30 da kapanış konuşması ile bitecektir
+                    </p>
                 </p>
             </div>
             <div className="schedule-zone">

@@ -1,38 +1,38 @@
 [
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Burcu Sakız",
+        "time": "11:00 - 11:50",
         "image": "foto_2.jpg"
     },
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
-        "image": "foto_2.jpg"
-    },
-    {
-        "title": "Açılış Konuşması Açılış Konuşması Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Batuhan Apaydın",
+        "time": "12:00 - 12:50",
         "image": "foto_2.jpg"
     },
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Emre Savcı",
+        "time": "13:00 - 13:50",
         "image": "foto_2.jpg"
     },
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Semih Kaya",
+        "time": "14:30 - 15:20",
         "image": "foto_2.jpg"
     },
     {
         "title": "Açılış Konuşması",
-        "speaker": "Bilgisayar Topluluğu",
-        "time": "10:00 - 11:00",
+        "speaker": "Emre Rençberoğlu",
+        "time": "15:30 - 16:20",
+        "image": "foto_2.jpg"
+    },
+    {
+        "title": "Açılış Konuşması",
+        "speaker": "Fatih Kadir Akın",
+        "time": "16:30 - 17:20",
         "image": "foto_2.jpg"
     }
 ]
