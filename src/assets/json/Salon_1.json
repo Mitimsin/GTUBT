@@ -1,38 +1,38 @@
 [
     {
-        "title": "Açılış Konuşması",
+        "title": "mmm",
         "speaker": "Doğan Dalva",
         "time": "11:00 - 11:50",
-        "image": "foto_2.jpg"
+        "image": "dogan.jpeg"
     },
     {
-        "title": "Açılış Konuşması",
+        "title": "mmm",
         "speaker": "Turkcell",
         "time": "12:00 - 12:50",
-        "image": "foto_2.jpg"
+        "image": "uygun.jpeg"
     },
     {
-        "title": "Açılış Konuşması",
-        "speaker": "Solana",
+        "title": "mmm",
+        "speaker": "Uygun Bodur",
         "time": "13:00 - 13:50",
-        "image": "foto_2.jpg"
+        "image": "uygun.jpeg"
     },
     {
-        "title": "Açılış Konuşması",
+        "title": "Veri Dünyasına Yolculuk",
         "speaker": "Talha Kılıç",
         "time": "14:30 - 15:20",
-        "image": "foto_2.jpg"
+        "image": "talha_kilic.jpeg"
     },
     {
-        "title": "Açılış Konuşması",
+        "title": "mmm",
         "speaker": "İlknur Dönmez",
         "time": "15:30 - 16:20",
-        "image": "foto_2.jpg"
+        "image": "uygun.jpeg"
     },
     {
-        "title": "Açılış Konuşması",
+        "title": "Data Engineering’in Sektördeki Yükselen Değeri",
         "speaker": "Erkan Şirin",
         "time": "16:30 - 17:20",
-        "image": "foto_2.jpg"
+        "image": "ekran_sirin.jpeg"
     }
 ]

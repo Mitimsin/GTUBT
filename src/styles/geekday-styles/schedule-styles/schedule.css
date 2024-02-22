@@ -32,10 +32,12 @@
 .schedule-zone {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    margin-left: 6%;
-    margin-right: 2%;
+    align-self: flex-start;
+    padding-left: 6%;
+    padding-right: 2%;
     gap: 36px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .schedule-seperator {
@@ -44,29 +46,40 @@
 
 .schedule-strip {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .schedule-strip-title {
     font-size: 36px;
     white-space: nowrap;
+    margin-left: 4%;
 }
 
 .schedule-strip-list {
     display: flex;
-    align-items: center;
     gap: 10px;
+    padding: 0 2%;
+    overflow-x: scroll;
+    cursor: pointer;
+    user-select: none;
+}
+
+.schedule-strip-list::-webkit-scrollbar {
+    display: none;
 }
 
 .schedule-box {
     display: flex;
     flex-direction: column;
+    min-width: 260px;
     width: 18%;
     gap: 8px;
 }
 
 .schedule-box-info-box {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     width: 100%;
     aspect-ratio: 1.8;
@@ -147,12 +160,9 @@
     }
 
     .schedule-zone {
-        margin-left: 0;
-        margin-right: 0;
-        align-self: flex-start;
+        padding-left: 0;
+        padding-right: 0;
         gap: 20px;
-        width: 100%;
-        overflow: hidden;
     }
 
     .schedule-seperator {
@@ -161,28 +171,10 @@
         height: 1px;
         background-color: rgba(255, 255, 255, 0.8);
     }
-
-    .schedule-strip {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .schedule-strip-title {
-        margin-left: 4%;
-    }
-
     .schedule-strip-list {
         gap: 16px;
         padding: 0 2%;
         overflow-x: scroll;
-    }
-
-    .schedule-strip-list::-webkit-scrollbar {
-        display: none;
-    }
-
-    .schedule-box {
-        min-width: 260px;
     }
 
     .schedule-box-info-box {

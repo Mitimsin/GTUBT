@@ -1,42 +1,17 @@
 [
     {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
+        "name": "İhsan AI",
+        "info": "mm",
+        "image": "silver_sponsors/ihsan.jpg"
     },
     {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
+        "name": "Sanlab",
+        "info": "SANLAB, 2009 yılında kurulmuş simülasyon sektörünün öncü firması olup, Eğitim Simülatörleri ve Hareket Platformları alanlarında benzersiz hizmetler sunmaktadır.",
+        "image": "silver_sponsors/sanlab.png"
     },
     {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
-    },
-    {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
-    },
-    {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
-    },
-    {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
-    },
-    {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
-    },
-    {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
+        "name": "Solana",
+        "info": "En umut verici projeleri Türkiye'deki Solana ekosisteminde başlatma ve büyütme konusunda yardımcı olan, yaratıcılar, geliştiriciler ve teknoloji işletmelerini başlatma ve büyütme konusunda deneyime sahip bir yaratıcılar kooperatifi.",
+        "image": "silver_sponsors/superteam.jpg"
     }
 ]

@@ -5,7 +5,6 @@ import SponsorBox from "./SponsorBox";
 
 import GoldSponsors from "../../../assets/json/GoldSponsors.json";
 import SilverSponsors from "../../../assets/json/SilverSponsors.json";
-import BronzeSponsors from "../../../assets/json/BronzeSponsors.json";
 import ExtraSponsors from "../../../assets/json/ExtraSponsors.json";
 
 export enum SponsorLevels {
@@ -58,23 +57,7 @@ const Sponsors = () => {
                 </div>
             </div>
             <div className="sponsor-zone">
-                <p className="sponsor-title">Bronz Sponsorlarımız</p>
-                <div className="sponsor-list">
-                    {BronzeSponsors.map((sponsor, index) => {
-                        return (
-                            <SponsorBox
-                                key={index}
-                                name={sponsor.name}
-                                info={sponsor.info}
-                                level={SponsorLevels.BRONZE}
-                                image={sponsor.image}
-                            />
-                        );
-                    })}
-                </div>
-            </div>
-            <div className="sponsor-zone">
-                <p className="sponsor-title">Extra Sponsorlarımız</p>
+                <p className="sponsor-title">Ek Sponsorlarımız</p>
                 <div className="sponsor-list">
                     {ExtraSponsors.map((sponsor, index) => {
                         return (

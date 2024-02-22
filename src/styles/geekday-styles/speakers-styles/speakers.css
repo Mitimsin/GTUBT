@@ -39,42 +39,80 @@
     padding: 0px;
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.6);
-    overflow: hidden;
 }
 
 .speaker-box-image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 72%;
+    height: 65%;
 }
 
 .speaker-box-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
 }
 
 .speaker-box-text {
     display: flex;
+    position: relative;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 0 8%;
+    justify-content: space-evenly;
+    height: 35%;
+    padding: 3px 6%;
 }
 
 .speaker-box-name {
-    font-size: 22px;
+    font-size: 1.3em;
     margin-bottom: 4px;
 }
 
+.speaker-box-name-extended {
+    position: absolute;
+    visibility: hidden;
+    font-size: 1.3em;
+}
+
+.speaker-box-text-info {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2px;
+}
+
 .speaker-box-subject {
-    font-size: 16px;
+    font-size: 0.9em;
     color: rgb(133, 133, 133);
 }
 
+.speaker-box-subject-extended {
+    position: absolute;
+    visibility: hidden;
+}
+
 .speaker-box-company {
-    font-size: 16px;
+    font-size: 0.9em;
     color: rgb(133, 133, 133);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.speaker-box-company-extended {
+    position: absolute;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+.hovered {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 6px 10px;
+    z-index: 3;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 4px;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -110,5 +148,22 @@
 
     .speaker-box-image-box {
         height: 64%;
+    }
+
+    .speaker-box-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .speaker-box-subject {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .speaker-box-company-extended {
+        white-space: normal;
+        width: 100%;
     }
 }

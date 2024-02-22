@@ -1,38 +1,38 @@
 [
     {
-        "title": "Açılış Konuşması",
+        "title": "mmm",
         "speaker": "Burcu Sakız",
         "time": "11:00 - 11:50",
-        "image": "foto_2.jpg"
+        "image": "burcu_sakiz.jpeg"
     },
     {
-        "title": "Açılış Konuşması",
+        "title": "Pipeline as Code with Dagger",
         "speaker": "Batuhan Apaydın",
         "time": "12:00 - 12:50",
-        "image": "foto_2.jpg"
+        "image": "batuhan_apaydin.jpeg"
     },
     {
-        "title": "Açılış Konuşması",
+        "title": "Golang ile backend geliştirme",
         "speaker": "Emre Savcı",
         "time": "13:00 - 13:50",
-        "image": "foto_2.jpg"
+        "image": "emre_savci.jpeg"
     },
     {
-        "title": "Açılış Konuşması",
+        "title": "mmm",
         "speaker": "Semih Kaya",
         "time": "14:30 - 15:20",
-        "image": "foto_2.jpg"
+        "image": "semih_kaya.jpg"
     },
     {
-        "title": "Açılış Konuşması",
+        "title": "Do AI Dream of Electric Cat?",
         "speaker": "Emre Rençberoğlu",
         "time": "15:30 - 16:20",
-        "image": "foto_2.jpg"
+        "image": "emre_renc.jpeg"
     },
     {
-        "title": "Açılış Konuşması",
+        "title": "mmm",
         "speaker": "Fatih Kadir Akın",
         "time": "16:30 - 17:20",
-        "image": "foto_2.jpg"
+        "image": "fka.jpeg"
     }
 ]

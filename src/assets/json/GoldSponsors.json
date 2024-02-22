@@ -1,12 +1,12 @@
 [
     {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
+        "name": "Timus Networks",
+        "info": "Timus, VPN'leri hafif, her zaman açık bir aracıyla değiştiren, kullanıcıların bağlantıda kalmasını ve korunmasını sağlayan ödüllü bir SASE ve Sıfır Güven Ağ Güvenliği çözümüdür.",
+        "image": "gold_sponsors/timus.png"
     },
     {
-        "name": "Mert Gürer",
-        "info": "Awsome factory manager doing awsome stuff for the world. Awsome factory manager doing awsome stuff for the world",
-        "image": "gold_sponsors/foto_2.jpg"
+        "name": "Turkish Aerospace",
+        "info": "Türk Havacılık ve Uzay Sanayii A.Ş., havacılık ve uzay sistemlerinin tasarımı, geliştirilmesi, üretimi, entegrasyonu, modernizasyonu ve satış sonrası destek konularında Türkiye'de teknolojinin merkezidir.",
+        "image": "gold_sponsors/aerospace.png"
     }
 ]

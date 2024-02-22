@@ -27,13 +27,23 @@ const GeekDay = () => {
     }, [location.pathname, setFaint]);
 
     useEffect(() => {
-        if (containerRef.current) {
-            const activeTabHeight =
-                containerRef.current.children[
-                    currentTab
-                ].getBoundingClientRect().height;
-            containerRef.current.style.height = `${activeTabHeight}px`;
-        }
+        const handleResize = () => {
+            if (containerRef.current) {
+                const activeTabHeight =
+                    containerRef.current.children[
+                        currentTab
+                    ].getBoundingClientRect().height;
+                containerRef.current.style.height = `${activeTabHeight}px`;
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, [currentTab]);
 
     useEffect(() => {
