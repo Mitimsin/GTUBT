@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../styles/aboutus-styles/aboutus.css";
 import logo from "../../assets/image/main_logo.png";
 import { Link } from "react-router-dom";
+import { DataContext } from "../../App";
 
 const Aboutus = () => {
+    const { mobile } = useContext(DataContext);
+
     return (
         <section id="aboutus" className="aboutus-container">
             <div className="aboutus-zone left">
@@ -29,20 +32,22 @@ const Aboutus = () => {
                     ile meraklısı olduğumuz konuları birinci ağızdan duyup,
                     sektörün usta isimleriyle birebir iletişime geçiyoruz.
                 </p>
-                <Link
-                    to={"/geekday"}
-                    className="navbar-special"
-                    style={{
-                        alignSelf: "center",
-                        marginTop: 12,
-                        paddingLeft: 28,
-                        paddingRight: 28,
-                        paddingTop: 16,
-                        paddingBottom: 16,
-                    }}
-                >
-                    GeekDay 2024!
-                </Link>
+                {!mobile && (
+                    <Link
+                        to={"/geekday"}
+                        className="navbar-special"
+                        style={{
+                            alignSelf: "center",
+                            marginTop: 12,
+                            paddingLeft: 28,
+                            paddingRight: 28,
+                            paddingTop: 16,
+                            paddingBottom: 16,
+                        }}
+                    >
+                        GeekDay 2024!
+                    </Link>
+                )}
             </div>
         </section>
     );

@@ -106,7 +106,25 @@
     white-space: nowrap;
 }
 
-.hovered {
+.speaker-box-name-extended.hovered {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 6px 10px;
+    z-index: 3;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 4px;
+}
+
+.speaker-box-subject-extended.hovered {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 6px 10px;
+    z-index: 3;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 4px;
+}
+
+.speaker-box-company-extended.hovered {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 6px 10px;

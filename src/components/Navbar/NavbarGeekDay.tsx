@@ -4,6 +4,7 @@ import NavbarButtonGeekDay from "./NavbarButtonGeekDay";
 import { DataContext } from "../../App";
 import { TabMembers } from "../GeekDay/GeekDay";
 import logo from "../../assets/image/white_logo.png";
+import { Link } from "react-router-dom";
 
 interface Props {
     currentTab: number;
@@ -29,6 +30,18 @@ const NavbarGeekDay = (props: Props) => {
                     <img src={logo} alt="" className="navbar-logo" />
                 </button>
             )}
+            {mobile && (
+                <Link
+                    to={
+                        "https://kommunity.com/gtubt/events/geekday-2024-aacf124d"
+                    }
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="geekday-navbar-ticket"
+                >
+                    Biletini Al!
+                </Link>
+            )}
             <div
                 className={`navbar-zone right ${
                     mobile && burgerMenu ? "shown" : "hidden"
@@ -50,6 +63,18 @@ const NavbarGeekDay = (props: Props) => {
                     );
                 })}
             </div>
+            {!mobile && (
+                <Link
+                    to={
+                        "https://kommunity.com/gtubt/events/geekday-2024-aacf124d"
+                    }
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="geekday-navbar-ticket"
+                >
+                    Biletini Al!
+                </Link>
+            )}
             {mobile && (
                 <button
                     onClick={() => setBurgerMenu(!burgerMenu)}

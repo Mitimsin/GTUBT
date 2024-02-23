@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../styles/home-styles/home.css";
 import homeLogo from "../../assets/image/color_logo.png";
 import Type from "./Type";
+import { Link } from "react-router-dom";
+import { DataContext } from "../../App";
 
 function Home() {
+    const { mobile } = useContext(DataContext);
+
     return (
         <section id="home" className="home-container">
             <div className="home-zone">
@@ -23,6 +27,22 @@ function Home() {
                         </strong>
                     </h1>
                     <Type />
+                    {mobile && (
+                        <Link
+                            to={"/geekday"}
+                            className="navbar-special"
+                            style={{
+                                alignSelf: "flex-start",
+                                marginTop: 12,
+                                paddingLeft: 28,
+                                paddingRight: 28,
+                                paddingTop: 16,
+                                paddingBottom: 16,
+                            }}
+                        >
+                            GeekDay 2024!
+                        </Link>
+                    )}
                 </div>
                 <div className="home-image-box">
                     <img src={homeLogo} alt="home" className="home-image" />
