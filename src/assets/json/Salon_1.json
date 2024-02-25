@@ -1,18 +1,18 @@
 [
     {
-        "title": "mmm",
+        "title": "Understanding AI",
         "speaker": "Doğan Dalva",
         "time": "11:00 - 11:50",
         "image": "dogan.jpeg"
     },
     {
-        "title": "mmm",
+        "title": "-",
         "speaker": "Turkcell",
         "time": "12:00 - 12:50",
-        "image": "uygun.jpeg"
+        "image": "white_logo.png"
     },
     {
-        "title": "mmm",
+        "title": "Geleceğin İş Modelleri: Generative AI ve Blockchain'in Etkileşimi",
         "speaker": "Uygun Bodur",
         "time": "13:00 - 13:50",
         "image": "uygun.jpeg"
@@ -24,10 +24,10 @@
         "image": "talha_kilic.jpeg"
     },
     {
-        "title": "mmm",
+        "title": "Perceptron’dan Üretken Yapay Zekâ ve Büyük Dil Modellerine",
         "speaker": "İlknur Dönmez",
         "time": "15:30 - 16:20",
-        "image": "uygun.jpeg"
+        "image": "ilknur.jpeg"
     },
     {
         "title": "Data Engineering’in Sektördeki Yükselen Değeri",

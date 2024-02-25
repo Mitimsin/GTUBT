@@ -1,18 +1,18 @@
 [
     {
-        "title": "mmm",
+        "title": "Tasarım Odaklı Düşünce",
         "speaker": "Emrah Kozan",
         "time": "11:00 - 11:50",
         "image": "emrah_kozan.jpeg"
     },
     {
-        "title": "mmm",
+        "title": "AI Dominated Flutter Apps",
         "speaker": "Sercan Yusuf",
         "time": "12:00 - 12:50",
         "image": "sercan_yusuf.jpeg"
     },
     {
-        "title": "mmm",
+        "title": "React Native ile Mobil Uygulama Geliştirme",
         "speaker": "Zafer Ayan",
         "time": "13:00 - 13:50",
         "image": "zafer_ayan.jpeg"
@@ -24,7 +24,7 @@
         "image": "oktay_kiraz.jpeg"
     },
     {
-        "title": "mmm",
+        "title": "Bilgi Asimetrisine Karşı Yapay Zeka Devrimi: İş Dünyası Artık Daha Şeffaf ve Güvenilir Olabilir mi?",
         "speaker": "Sibel Aydemir",
         "time": "15:30 - 16:20",
         "image": "sibel_aydemir.jpeg"
