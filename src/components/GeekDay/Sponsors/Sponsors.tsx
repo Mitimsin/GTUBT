@@ -57,7 +57,7 @@ const Sponsors = () => {
                 </div>
             </div>
             <div className="sponsor-zone">
-                <p className="sponsor-title">Ek Sponsorlarımız</p>
+                <p className="sponsor-title">Ürün ve Medya Sponsorlarımız</p>
                 <div className="sponsor-list">
                     {ExtraSponsors.map((sponsor, index) => {
                         return (
