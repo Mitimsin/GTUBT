@@ -1,7 +1,7 @@
 [
     {
         "name": "İhsan AI",
-        "info": "mm",
+        "info": "-",
         "image": "silver_sponsors/ihsan.jpg"
     },
     {
@@ -13,5 +13,10 @@
         "name": "Solana",
         "info": "En umut verici projeleri Türkiye'deki Solana ekosisteminde başlatma ve büyütme konusunda yardımcı olan, yaratıcılar, geliştiriciler ve teknoloji işletmelerini başlatma ve büyütme konusunda deneyime sahip bir yaratıcılar kooperatifi.",
         "image": "silver_sponsors/superteam.jpg"
+    },
+    {
+        "name": "XON",
+        "info": "EXON, mühendisliğin ortak bir akılla inovasyon üretebileceğine inanan, güçlü fikirlerin ancak uygulanabilir olduğu müddetçe güçlü bir fikir olabileceğini benimsemiş bir teknoloji şirketidir.",
+        "image": "silver_sponsors/xon.png"
     }
 ]
