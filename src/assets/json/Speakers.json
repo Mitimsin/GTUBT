@@ -6,10 +6,10 @@
         "image": "dogan.jpeg"
     },
     {
-        "name": "Turkcell",
-        "subject": "-",
-        "company": "-",
-        "image": "white_logo.png"
+        "name": "Sercan Yusuf",
+        "subject": "Flutter Developer",
+        "company": "Swan Bitcoin",
+        "image": "sercan_yusuf.jpeg"
     },
     {
         "name": "Uygun Bodur",
@@ -78,10 +78,10 @@
         "image": "emrah_kozan.jpeg"
     },
     {
-        "name": "Sercan Yusuf",
-        "subject": "Flutter Developer",
-        "company": "Swan Bitcoin",
-        "image": "sercan_yusuf.jpeg"
+        "name": "Ömercan Yüksel",
+        "subject": "Associate Director, Digital Mobile Application Solutions",
+        "company": "Turkcell",
+        "image": "omercan.jpeg"
     },
     {
         "name": "Zafer Ayan",
