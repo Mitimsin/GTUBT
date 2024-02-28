@@ -32,9 +32,7 @@ const NavbarGeekDay = (props: Props) => {
             )}
             {mobile && (
                 <Link
-                    to={
-                        "https://kommunity.com/gtubt/events/geekday-2024-aacf124d"
-                    }
+                    to={"https://linktr.ee/gtubt"}
                     target="_blank"
                     rel="noreferrer noopener"
                     className="geekday-navbar-ticket"
@@ -65,9 +63,7 @@ const NavbarGeekDay = (props: Props) => {
             </div>
             {!mobile && (
                 <Link
-                    to={
-                        "https://kommunity.com/gtubt/events/geekday-2024-aacf124d"
-                    }
+                    to={"https://linktr.ee/gtubt"}
                     target="_blank"
                     rel="noreferrer noopener"
                     className="geekday-navbar-ticket"
