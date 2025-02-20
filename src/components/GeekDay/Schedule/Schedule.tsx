@@ -16,7 +16,7 @@ const Schedule = () => {
           Bu sene 28 Şubat'ta gerçekleşecek olan GeekDay etkinlik takvimi.{" "}
           <br />
           <span className="schedule-extra-info">
-            Etkinlik saat 11.00 da açılış konuşması ile başlayıp saat 17.30 da
+            Etkinlik saat 10.30 da açılış konuşması ile başlayıp saat 17.30 da
             kapanış konuşması ile bitecektir
           </span>
         </p>
