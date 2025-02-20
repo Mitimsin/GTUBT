@@ -1,32 +1,12 @@
 [
     {
-        "name": "Miscet",
-        "info": "Kolay etkinlik oluşturma, sadakat programları ve akıllı biletlerle etkinlikleri dijitalleştiren. Katılımcılara çeşitli faydalar sağlayan blockchain şirketi.",
-        "image": "extra_sponsors/miscet.png"
+        "name": "Kommunity",
+        "info": "Kommunity, kullanıcıların ilgi alanlarına göre topluluklar oluşturup etkinlikler düzenleyebildiği ve bu etkinliklere katılım sağlayabildiği bir sosyal platform.",
+        "image": "sponsors/kommunity.jpg"
     },
     {
-        "name": "Miuul",
-        "info": "Miuul, geleceğin işleri için kariyer yolları oluşturmaya odaklanan ve veri bilimi projeleri üstlenen şirketlere danışmanlık hizmetleri sunan yenilikçi bir eğitim ve teknoloji şirketidir.",
-        "image": "extra_sponsors/miuul.png"
-    },
-    {
-        "name": "Photier",
-        "info": "Photier, etkinlik endüstrisinde yüz tanıma ve yapay zekayı kullanan dünyanın ilk fotoğraf dağıtım mobil uygulamasıdır.",
-        "image": "extra_sponsors/photier.png"
-    },
-    {
-        "name": "Secretcv.com",
-        "info": "Secretcv.com Türkiye'nin önde gelen çevrimiçi kariyer ve işe alım kaynaklarından biridir.",
-        "image": "extra_sponsors/secretcv.png"
-    },
-    {
-        "name": "Veri Bilimi Okulu",
-        "info": "Veri Bilimi, Yapay Zeka, Büyük Veri, Makine Öğrenmesi, R ve Python Üreticilerini Bir Araya Getiren Platform",
-        "image": "extra_sponsors/veribilimiokulu.png"
-    },
-    {
-        "name": "Yves Rocher",
-        "info": "Yves Rocher, 1965 yılında Fransız girişimci Yves Rocher tarafından La Gacilly'de kurulmuş bir Fransız cilt bakımı, kozmetik ve parfüm şirketidir.",
-        "image": "extra_sponsors/yves_rocher.png"
+        "name": "Gebze Belediyesi",
+        "info": "",
+        "image": "sponsors/gebze.png"
     }
 ]

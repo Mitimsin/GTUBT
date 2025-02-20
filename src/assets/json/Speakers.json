@@ -1,110 +1,74 @@
 [
-    {
-        "name": "Doğan Dalva",
-        "subject": "Research Engineer",
-        "company": "Huawei Technologies",
-        "image": "dogan.jpeg"
-    },
-    {
-        "name": "Sercan Yusuf",
-        "subject": "Flutter Developer",
-        "company": "Swan Bitcoin",
-        "image": "sercan_yusuf.jpeg"
-    },
-    {
-        "name": "Uygun Bodur",
-        "subject": "Software Specialist",
-        "company": "Siparişim A.Ş & AIFusion3",
-        "image": "uygun.jpeg"
-    },
-    {
-        "name": "Talha Kılıç",
-        "subject": "Big Data Engineer",
-        "company": "Fibabanka",
-        "image": "talha_kilic.jpeg"
-    },
-    {
-        "name": "İlknur Dönmez",
-        "subject": "Researcher",
-        "company": "Tubitak Bilgem",
-        "image": "ilknur.jpeg"
-    },
-    {
-        "name": "Erkan Şirin",
-        "subject": "Data/ML Engineer, Solution Architect",
-        "company": "DataLonga",
-        "image": "ekran_sirin.jpeg"
-    },
-    {
-        "name": "Ahmet Kayhan Seker",
-        "subject": "Cloud Solution Engineer",
-        "company": "Huawei",
-        "image": "kayan_seker.jpeg"
-    },
-    {
-        "name": "Batuhan Apaydın",
-        "subject": "Software Developer",
-        "company": "Trendyol Group",
-        "image": "batuhan_apaydin.jpeg"
-    },
-    {
-        "name": "Emre Savcı",
-        "subject": "Tech Lead / Staff Engineer",
-        "company": "Trendyol Group",
-        "image": "emre_savci.jpeg"
-    },
-    {
-        "name": "Semih Kaya",
-        "subject": "Information Technology Manager",
-        "company": "Turkish Aerospace",
-        "image": "semih_kaya.jpg"
-    },
-    {
-        "name": "Emre Rençberoğlu",
-        "subject": "Data Science",
-        "company": "Hepsiburada",
-        "image": "emre_renc.jpeg"
-    },
-    {
-        "name": "Fatih Kadir Akın",
-        "subject": "Developer Relations Manager",
-        "company": "Teknasyon",
-        "image": "fka.jpeg"
-    },
-    {
-        "name": "Emrah Kozan",
-        "subject": "UI/UX Designer",
-        "company": "Piksel Akademi",
-        "image": "emrah_kozan.jpeg"
-    },
-    {
-        "name": "Ömercan Yüksel",
-        "subject": "Associate Director, Digital Mobile Application Solutions",
-        "company": "Turkcell",
-        "image": "omercan.jpeg"
-    },
-    {
-        "name": "Zafer Ayan",
-        "subject": "Frontend Developer",
-        "company": "Teknasyon",
-        "image": "zafer_ayan.jpeg"
-    },
-    {
-        "name": "Oktay Kiraz",
-        "subject": "Cloud, DevOps & AWS Engineer",
-        "company": "Phoenix Analytics & Upwork",
-        "image": "oktay_kiraz.jpeg"
-    },
-    {
-        "name": "Sibel Aydemir",
-        "subject": "Associate Professor in Finance",
-        "company": "Gebze Technical University",
-        "image": "sibel_aydemir.jpeg"
-    },
-    {
-        "name": "Emin Fedar",
-        "subject": "Software Engineer",
-        "company": "Pardus",
-        "image": "emin_fedar.jpeg"
-    }
+  {
+    "name": "Hakan Torun",
+    "subject": "Üretken Yapay Zeka: Gelişimi ve Geleceği",
+    "company": "",
+    "image": "hakan torun.jpg"
+  },
+  {
+    "name": "Sinan Keçeci",
+    "subject": "Data Science in E-commerce",
+    "company": "",
+    "image": "Sinan Kececi.jpeg"
+  },
+  {
+    "name": "Daron Yöndem",
+    "subject": "Meet My AI Sidekick",
+    "company": "",
+    "image": "Daron_yöndem_meetmyaisidekick.jpg"
+  },
+  {
+    "name": "Emre Savcı",
+    "subject": "The New Era of Software Engineering: AI Agent Development",
+    "company": "",
+    "image": "emre_savcı.jpg"
+  },
+  {
+    "name": "Ahmet Çakır & Kaan Alaşar",
+    "subject": "Yazılım ve Siber Güvenliğin Geleceği",
+    "company": "",
+    "image": "Ahmet_çakır.jpg"
+  },
+  {
+    "name": "Özgün Bal",
+    "subject": "React ve React Native Geliştirmede Monorepo Kullanımı",
+    "company": "",
+    "image": "Özgün_Bal.jpeg"
+  },
+  {
+    "name": "Erdoğan Yoksul",
+    "subject": "Rust Bindings For Python",
+    "company": "",
+    "image": "erdogan-yoksul.jpeg"
+  },
+  {
+    "name": "Tayfun Yılmaz",
+    "subject": "Oyun Geliştirme Kariyerinde Yol Haritası ve Karşılaşılan Zorluklar",
+    "company": "",
+    "image": "TayfunYılmaz.jpg"
+  },
+  {
+    "name": "Rukiye Bozkurt",
+    "subject": "Architectural Refactoring: Building for Future",
+    "company": "",
+    "image": "rukiye bozkurt.jpg"
+  },
+  {
+    "name": "Kağan Ayten",
+    "subject": "Bağımsız Oyun Geliştirme Sürecim",
+    "company": "",
+    "image": "Kağan Ayten.png"
+  },
+  {
+    "name": "Batuhan Apaydın",
+    "subject": "Embrace the Modern Techniques for Building OCI Images Today",
+    "company": "",
+    "image": "batuhan_apaydın.jpg"
+  },
+  {
+    "name": "Mertcan Karakaya",
+    "subject": "Veri Mühendisi Olmak",
+    "company": "",
+    "image": "mertcan_karakaya.jpeg"
+  }
 ]

@@ -1,38 +1,45 @@
 [
     {
-        "title": "Dijital Dönüşüm Çağında Huawei Bulut Bilişim",
-        "speaker": "Ahmet Kayhan Seker",
-        "time": "11:00 - 11:50",
-        "image": "kayan_seker.jpeg"
+      "title": "Rust Bindings For Python",
+      "speaker": "Erdoğan Yoksul",
+      "time": "11.00 - 11.40",
+      "image": "erdogan-yoksul.jpeg"
     },
     {
-        "title": "Pipeline as Code with Dagger",
-        "speaker": "Batuhan Apaydın",
-        "time": "12:00 - 12:50",
-        "image": "batuhan_apaydin.jpeg"
+      "title": "Oyun Geliştirme Kariyerinde Yol Haritası ve Karşılaşılan Zorluklar",
+      "speaker": "Tayfun Yılmaz",
+      "time": "11.50 - 12.30",
+      "image": "TayfunYılmaz.jpg"
     },
     {
-        "title": "Golang ile backend geliştirme",
-        "speaker": "Emre Savcı",
-        "time": "13:00 - 13:50",
-        "image": "emre_savci.jpeg"
+      "title": "Architectural Refactoring: Building for Future",
+      "speaker": "Rukiye Bozkurt",
+      "time": "12.40 - 13.20",
+      "image": "rukiye bozkurt.jpg"
     },
     {
-        "title": "Savunma Sanayi Teknolojileri",
-        "speaker": "Semih Kaya",
-        "time": "14:30 - 15:20",
-        "image": "semih_kaya.jpg"
+      "title": "Bağımsız Oyun Geliştirme Sürecim",
+      "speaker": "Kağan Ayten",
+      "time": "14.00 - 14.40",
+      "image": "Kağan Ayten.png"
+    },
+    
+    {
+      "title": "Mezunlar Buluşması",
+      "speaker": "Üniversitemiz mezunları",
+      "time": "14.50 - 15.30",
+      "image": "mezun.png"
     },
     {
-        "title": "Do AI Dream of Electric Cat?",
-        "speaker": "Emre Rençberoğlu",
-        "time": "15:30 - 16:20",
-        "image": "emre_renc.jpeg"
+      "title": "Embrace the Modern Techniques for Building OCI Images Today",
+      "speaker": "Batuhan Apaydın",
+      "time": "15.40 - 16.20",
+      "image": "batuhan_apaydın.jpg"
     },
     {
-        "title": "Deno ve OpenAI API ile Chatbot Geliştirme",
-        "speaker": "Fatih Kadir Akın",
-        "time": "16:30 - 17:20",
-        "image": "fka.jpeg"
+      "title": "Veri Mühendisi Olmak",
+      "speaker": "Mertcan Karakaya",
+      "time": "16.30 - 17.10",
+      "image": "mertcan_karakaya.jpeg"
     }
 ]

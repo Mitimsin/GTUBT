@@ -1,38 +1,44 @@
 [
     {
-        "title": "Understanding AI",
-        "speaker": "Doğan Dalva",
-        "time": "11:00 - 11:50",
-        "image": "dogan.jpeg"
+      "title": "Üretken Yapay Zeka: Gelişimi ve Geleceği",
+      "speaker": "Hakan Torun",
+      "time": "11.00 - 11.40",
+      "image": "hakan torun.jpg"
     },
     {
-        "title": "AI Dominated Flutter Apps",
-        "speaker": "Sercan Yusuf",
-        "time": "12:00 - 12:50",
-        "image": "sercan_yusuf.jpeg"
+      "title": "Data Science in E-commerce",
+      "speaker": "Sinan Keçeci",
+      "time": "11.50 - 12.30",
+      "image": "Sinan Kececi.jpeg"
     },
     {
-        "title": "Geleceğin İş Modelleri: Generative AI ve Blockchain'in Etkileşimi",
-        "speaker": "Uygun Bodur",
-        "time": "13:00 - 13:50",
-        "image": "uygun.jpeg"
+      "title": "Meet My AI Sidekick",
+      "speaker": "Daron Yöndem",
+      "time": "12.40 - 13.20",
+      "image": "Daron_yöndem_meetmyaisidekick.jpg"
     },
     {
-        "title": "Veri Dünyasına Yolculuk",
-        "speaker": "Talha Kılıç",
-        "time": "14:30 - 15:20",
-        "image": "talha_kilic.jpeg"
+      "title": "The New Era of Software Engineering: AI Agent Development",
+      "speaker": "Emre Savcı",
+      "time": "14.00 - 14.40",
+      "image": "emre_savcı.jpg"
     },
     {
-        "title": "Perceptron’dan Üretken Yapay Zekâ ve Büyük Dil Modellerine",
-        "speaker": "İlknur Dönmez",
-        "time": "15:30 - 16:20",
-        "image": "ilknur.jpeg"
+      "title": "Mezunlar Buluşması",
+      "speaker": "Üniversitemiz mezunları",
+      "time": "14.50 - 15.30",
+      "image": "mezun.png"
     },
     {
-        "title": "Data Engineering’in Sektördeki Yükselen Değeri",
-        "speaker": "Erkan Şirin",
-        "time": "16:30 - 17:20",
-        "image": "ekran_sirin.jpeg"
+      "title": "Yazılım ve Siber Güvenliğin Geleceği",
+      "speaker": "Ahmet Çakır & Kaan Alaşar",
+      "time": "15.40 - 16.20",
+      "image": "Ahmet_çakır.jpg"
+    },
+    {
+      "title": "React ve React Native Geliştirmede Monorepo Kullanımı",
+      "speaker": "Özgün Bal",
+      "time": "16.30 - 17.10",
+      "image": "Özgün_Bal.jpeg"
     }
 ]
